@@ -1,0 +1,11 @@
+import AboutHero from "@/components/home/AboutHero";
+import Hero from "@/components/home/Hero";
+
+export default function Home() {
+  return (
+    <main className="w-full">
+      <Hero />
+      <AboutHero />
+    </main>
+  );
+}
