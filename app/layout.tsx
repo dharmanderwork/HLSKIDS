@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { Fredoka, Poppins } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 
 const fredoka = Fredoka({
   subsets: ["latin"],
@@ -38,6 +39,8 @@ export default function RootLayout({
         <div className="pt25 bg-[#FFF8E7]">
           {children}
         </div>
+
+        <Footer />
       </body>
     {/* </body> */}
     </html>

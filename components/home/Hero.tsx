@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden pt-25 bg-[#FFF8E7]">
       {/* ========== TOP WAVE BACKGROUND ========== */}
-      <div className="absolute top-0 left-0 w-full h-[120px] md:h-[180px] z-0">
+      <div className="absolute top-0 left-0 w-full h-30 md:h-45 z-0">
         <svg
           viewBox="0 0 1440 180"
           fill="none"
@@ -152,7 +152,7 @@ export default function Hero() {
               className="absolute top-4 right-4 md:top-8 md:right-8 z-30"
             >
               <div className="relative">
-                <div className="bg-gradient-to-br from-yellow-400 to-orange-500 text-white px-4 py-3 rounded-2xl shadow-xl transform rotate-6 hover:rotate-0 transition-transform duration-300">
+                <div className="bg-linear-to-br from-yellow-400 to-orange-500 text-white px-4 py-3 rounded-2xl shadow-xl transform rotate-6 hover:rotate-0 transition-transform duration-300">
                   <p className="text-xs font-bold uppercase tracking-wider">School</p>
                   <p className="text-sm font-extrabold">Admission</p>
                   <p className="text-xs font-bold">Open Now</p>
@@ -173,7 +173,7 @@ export default function Hero() {
                 alt="HLS Kids Play School Students"
                 width={500}
                 height={500}
-                className="w-[280px] sm:w-[350px] md:w-[420px] lg:w-[480px] h-auto drop-shadow-2xl object-contain"
+                className="w-[280px] sm:w-[350px] md:w-[420px] lg:w-[580px] h-auto drop-shadow-2xl object-contain"
                 priority
               />
             </motion.div>

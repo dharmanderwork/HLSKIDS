@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///home/dharmander/code/web%20development/projects/freelancing/hlskids/HLSKIDS/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,wKAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}},
-    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":["file:///home/dharmander/code/web%20development/projects/freelancing/hlskids/HLSKIDS/app/page.tsx"],"sourcesContent":["import Hero from \"@/components/home/Hero\";\nimport Image from \"next/image\";\n\nexport default function Home() {\n  return (\n    <div className=\"flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black\">\n      <main className=\"flex flex-1 w-full  flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start\">\n      <Hero />\n      </main>\n    </div>\n  );\n}\n"],"names":["Home","className"],"mappings":";;;;;AAAA;;;AAGe,SAASA;IACtB,qBACE,mRAAC;QAAIC,WAAU;kBACb,cAAA,mRAAC;YAAKA,WAAU;sBAChB,cAAA,mRAAC,2KAAI;;;;;;;;;;;;;;;AAIX"}}]
-}
