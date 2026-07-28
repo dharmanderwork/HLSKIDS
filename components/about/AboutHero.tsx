@@ -6,7 +6,8 @@ import Image from "next/image";
 
 export default function AboutHero() {
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-br from-orange-50 via-yellow-50 to-pink-50 py-20 md:py-32">
+    <section className="relative w-full overflow-hidden bg-linear-to-br from-orange-50 via-yellow-50 to-pink-50 py-20 md:py-32">
+       <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-contain  before:bg-repeat"></div>
       {/* Floating Decorations */}
       <motion.div
         animate={{ y: [0, -20, 0], rotate: [0, 10, 0] }}

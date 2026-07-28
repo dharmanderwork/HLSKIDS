@@ -30,9 +30,10 @@ const socialLinks = [
 
 export default function Footer() {
     return (
-        <footer className="relative w-full overflow-hidden">
+        <footer className="relative w-full overflow-hidden ">
             {/* ========== SKY BACKGROUND SECTION ========== */}
-            <div className="relative bg-gradient-to-b from-sky-100 via-sky-50 to-green-50">
+            <div className="relative bg-linear-to-b from-sky-100 via-sky-50 to-green-50">
+             <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-contain  before:bg-repeat"></div>
 
                 {/* Animated Clouds */}
                 <div className="absolute top-6 left-[8%] opacity-70">

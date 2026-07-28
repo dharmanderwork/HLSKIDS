@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative w-full overflow-hidden pt-25 bg-[#FFF8E7]">
+    <section className="relative w-full overflow-hidden pt-25 bg-[#FFF8E7] bg-pattern ">
       {/* ========== TOP WAVE BACKGROUND ========== */}
       <div className="absolute top-0 left-0 w-full h-30 md:h-45 z-0">
         <svg

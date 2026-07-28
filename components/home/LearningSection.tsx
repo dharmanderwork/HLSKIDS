@@ -48,7 +48,7 @@ const cards = [
 
 export default function LearningSection() {
   return (
-    <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
+    <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden bg-pattern ">
       {/* Decorative Background Elements */}
       <div className="absolute top-10 left-[5%] opacity-20 hidden lg:block">
         <motion.div

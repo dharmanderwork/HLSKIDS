@@ -49,6 +49,7 @@ const cards = [
 export default function MissionVision() {
   return (
     <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
+       <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-contain  before:bg-repeat"></div>
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-orange-50/50 to-transparent" />
 

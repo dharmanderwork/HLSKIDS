@@ -54,6 +54,7 @@ const milestones = [
 export default function JourneyTimeline() {
   return (
     <section className="relative w-full bg-gradient-to-b from-gray-50 to-white py-16 md:py-24 overflow-hidden">
+       <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-contain  before:bg-repeat"></div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div

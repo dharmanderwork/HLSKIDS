@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function FacilitiesHero() {
   return (
-    <section className="relative w-full overflow-hidden min-h-[70vh] flex items-center">
+    <section className="relative w-full overflow-hidden min-h-[70vh] flex items-center pt-20">
       {/* Background Pattern */}
       <div className="absolute inset-0">
         <Image

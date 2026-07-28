@@ -6,6 +6,7 @@ import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
 export default function CtaBanner() {
   return (
     <section className="relative w-full overflow-hidden py-16 md:py-20">
+       <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-contain  before:bg-repeat"></div>
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400" />
 
@@ -38,6 +39,7 @@ export default function CtaBanner() {
       </motion.div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+         <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-90 before:bg-contain  before:bg-repeat"></div>
         <div className="text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

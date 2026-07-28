@@ -59,7 +59,8 @@ const stats = [
 
 export default function WhyChooseSection() {
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-b from-white via-yellow-50/40 to-white py-16 md:py-24">
+    <section className="relative w-full overflow-hidden bg-gradient-to-b from-white via-yellow-50/40 to-white py-16 md:py-24 ">
+       <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70"></div>
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -207,7 +208,7 @@ export default function WhyChooseSection() {
                 </div>
 
                 {/* Decorative Corner */}
-                <div className="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-white/40 to-transparent rounded-tl-full" />
+                <div className="absolute bottom-0 right-0 w-24 h-24 bg-linear-to-tl from-white/40 to-transparent rounded-tl-full" />
 
                 {/* Sparkle decoration */}
                 <motion.div
@@ -233,7 +234,7 @@ export default function WhyChooseSection() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white font-bold text-lg rounded-full shadow-xl hover:shadow-2xl transition-shadow"
+            className="inline-flex items-center gap-3 px-10 py-4 bg-linear-to-r from-purple-500 via-pink-500 to-orange-400 text-white font-bold text-lg rounded-full shadow-xl hover:shadow-2xl transition-shadow"
           >
             <Star className="w-5 h-5 fill-yellow-300 text-yellow-300" />
             Start Your Child's Journey Today

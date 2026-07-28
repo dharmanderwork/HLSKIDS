@@ -69,7 +69,8 @@ const programs = [
 
 export default function ProgramsSection() {
   return (
-    <section className="relative w-full overflow-hidden bg-linear-to-b from-white via-orange-50/30 to-white py-16 md:py-24">
+    <section className="relative w-full overflow-hidden bg-linear-to-b from-white via-orange-50/30 to-white py-16 md:py-24 bg-patte">
+      <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70"></div>
       {/* Floating Decorations */}
       <motion.div
         animate={{ y: [0, -20, 0], rotate: [0, 10, 0] }}
@@ -130,7 +131,7 @@ export default function ProgramsSection() {
         </motion.div>
 
         {/* Programs Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 bg-pattern ">
           {programs.map((program, index) => (
             <motion.div
               key={index}
@@ -230,13 +231,13 @@ export default function ProgramsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-14 relative overflow-hidden rounded-[2rem] bg-linear-to-r from-purple-500 via-pink-500 to-orange-400 p-8 md:p-10 shadow-xl"
+          className="mt-14 relative overflow-hidden rounded-[2rem] bg-linear-to-r from-purple-500 via-pink-500 to-orange-400 p-8 md:p-10 shadow-xl "
         >
           {/* Decorative circles */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3" />
           <div className="absolute bottom-0 left-0 w-40 h-40 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/3" />
 
-          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 bg-pattern">
             <div className="text-center md:text-left">
               <div className="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-1.5 mb-3">
                 <Sun className="w-4 h-4 text-yellow-200" />

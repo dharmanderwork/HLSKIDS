@@ -72,6 +72,7 @@ export default function GalleryCategories() {
 
   return (
     <section className="relative w-full bg-white py-12 md:py-16 overflow-hidden">
+       <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-cover  before:bg-no-repeat"></div>
       {/* Pattern Background */}
       <div className="absolute inset-0 opacity-5">
         <div

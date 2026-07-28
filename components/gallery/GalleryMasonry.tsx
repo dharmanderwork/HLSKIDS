@@ -120,6 +120,7 @@ export default function GalleryMasonry() {
 
   return (
     <section className="relative w-full bg-gradient-to-b from-white via-orange-50/30 to-white py-16 md:py-24 overflow-hidden">
+      <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-cover  before:bg-no-repeat"></div>
       {/* Pattern overlay */}
       <div className="absolute inset-0 opacity-3">
         <div

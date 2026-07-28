@@ -44,6 +44,7 @@ const leaders = [
 export default function LeadershipSection() {
   return (
     <section className="relative w-full bg-gradient-to-b from-white via-purple-50/30 to-white py-16 md:py-24 overflow-hidden">
+       <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-contain  before:bg-repeat"></div>
       {/* Floating decorations */}
       <motion.div
         animate={{ y: [0, -15, 0] }}

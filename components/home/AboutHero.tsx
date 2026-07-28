@@ -12,7 +12,7 @@ const features = [
 
 export default function AboutHero() {
   return (
-    <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
+    <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden bg-pattern ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           

@@ -34,6 +34,7 @@ const videos = [
 export default function GalleryGrid() {
   return (
     <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
+      <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-cover  before:bg-no-repeat"></div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
