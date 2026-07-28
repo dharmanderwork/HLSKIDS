@@ -107,13 +107,13 @@ export default function AdmissionRequirements() {
               </div>
 
               {/* Emoji */}
-              <motion.div
+              {/* <motion.div
                 animate={{ y: [0, -5, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
                 className="absolute top-6 right-6 text-2xl"
               >
                 {req.emoji}
-              </motion.div>
+              </motion.div> */}
 
               <h3 className="text-lg font-bold text-gray-900 font-heading mb-2 group-hover:text-sky-600 transition-colors">
                 {req.title}
