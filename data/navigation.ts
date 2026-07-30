@@ -24,8 +24,8 @@ export const navigation = [
       href: "/gallery",
     },
     {
-      title: "Parents",
-      href: "/parents",
+      title: "Franchise",
+      href: "/franchise",
     },
     {
       title: "Contact",
