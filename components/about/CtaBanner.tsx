@@ -2,13 +2,14 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
+import Link from "next/link";
 
 export default function CtaBanner() {
   return (
     <section className="relative w-full overflow-hidden py-16 md:py-20">
-       <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-contain  before:bg-repeat"></div>
+      <div className="absolute inset-0 bg-linear-to-r from-purple-600 via-pink-500 to-orange-400" />
+       <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-90 before:bg-cover  before:bg-no-repeat"></div>
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400" />
 
       {/* Decorative Circles */}
       <motion.div
@@ -39,7 +40,7 @@ export default function CtaBanner() {
       </motion.div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-         <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-90 before:bg-contain  before:bg-repeat"></div>
+         {/* <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-90 before:bg-contain  before:bg-repeat"></div> */}
         <div className="text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -56,6 +57,8 @@ export default function CtaBanner() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+              
+              <Link href="/contact">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -64,6 +67,9 @@ export default function CtaBanner() {
                 Admission Enquiry
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
+              </Link>
+              
+              <Link href="/franchise">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -72,6 +78,7 @@ export default function CtaBanner() {
                 Start a Franchise
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
+              </Link>
             </div>
 
             {/* Contact Info */}

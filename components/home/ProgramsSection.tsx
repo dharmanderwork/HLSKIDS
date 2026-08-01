@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Clock, Users, ArrowRight, Baby, BookOpen, GraduationCap, Sun, Heart } from "lucide-react";
+import Link from "next/link";
 
 const programs = [
   {
@@ -150,7 +151,7 @@ export default function ProgramsSection() {
 
                 {/* Image Side */}
                 <div className="relative w-full sm:w-2/5 shrink-0">
-                  <div className="relative h-48 sm:h-full min-h-45 rounded-2xl overflow-hidden shadow-md group-hover:shadow-lg transition-shadow">
+                  <div className="relative h-48 sm:h-full min-h-45 rounded-2xl  overflow-hidden shadow-md group-hover:shadow-lg transition-shadow">
                     <Image
                       src={program.image}
                       alt={program.title}
@@ -166,11 +167,11 @@ export default function ProgramsSection() {
                       {program.badge}
                     </div>
 
-                    {/* Icon Circle */}
-                    <div className={`absolute -bottom-4 -right-4 w-14 h-14 bg-linear-to-br ${program.color} rounded-full flex items-center justify-center shadow-lg border-4 border-white`}>
-                      <program.icon className="w-6 h-6 text-white" />
-                    </div>
                   </div>
+                    {/* Icon Circle */}
+                    <div className={`absolute  -bottom-4 -right-4 w-14 h-14 bg-linear-to-br ${program.color} rounded-full  flex items-center justify-center shadow-lg border-4 border-white z-40`}>
+                      <program.icon className="w-6 h-6 z-50 text-white" />
+                    </div>
                 </div>
 
                 {/* Content Side */}
@@ -202,24 +203,26 @@ export default function ProgramsSection() {
                   </div>
 
                   {/* CTA */}
-                  <motion.button
-                    whileHover={{ x: 5 }}
-                    whileTap={{ scale: 0.95 }}
-                    className={`inline-flex items-center gap-2 text-sm font-bold bg-linear-to-r ${program.color} bg-clip-text text-transparent group/btn`}
-                  >
-                    Read More
-                    <ArrowRight className="w-4 h-4 text-orange-500 group-hover/btn:translate-x-1 transition-transform" />
-                  </motion.button>
+                  <Link href="/programs">
+                    <motion.button
+                      whileHover={{ x: 5 }}
+                      whileTap={{ scale: 0.95 }}
+                      className={`inline-flex items-center gap-2 text-sm font-bold bg-linear-to-r ${program.color} bg-clip-text text-transparent group/btn`}
+                    >
+                      Read More
+                      <ArrowRight className="w-4 h-4 text-orange-500 group-hover/btn:translate-x-1 transition-transform" />
+                    </motion.button>
+                  </Link>
                 </div>
 
                 {/* Floating Decoration */}
-                <motion.div
+                {/* <motion.div
                   animate={{ y: [0, -8, 0] }}
                   transition={{ duration: 3, repeat: Infinity, delay: index * 0.5 }}
                   className="absolute -top-2 -right-2 text-2xl opacity-60"
                 >
                   {index === 0 ? "🧸" : index === 1 ? "📚" : index === 2 ? "🎨" : "🌟"}
-                </motion.div>
+                </motion.div> */}
               </div>
             </motion.div>
           ))}
@@ -251,13 +254,15 @@ export default function ProgramsSection() {
               </p>
             </div>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="shrink-0 px-8 py-3.5 bg-white text-purple-600 font-bold rounded-full shadow-lg hover:shadow-xl transition-shadow"
-            >
-              Enquire Now
-            </motion.button>
+            <Link href="/contact">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="shrink-0 px-8 py-3.5 bg-white text-purple-600 font-bold rounded-full shadow-lg hover:shadow-xl transition-shadow"
+              >
+                Enquire Now
+              </motion.button>
+            </Link>
           </div>
         </motion.div>
       </div>

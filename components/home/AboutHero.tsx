@@ -99,13 +99,15 @@ export default function AboutHero() {
 
             {/* CTA & Phone */}
             <div className="flex flex-col sm:flex-row items-center gap-4">
-              <motion.button
+              
+              <motion.a
+                    href="/contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-full shadow-lg shadow-orange-500/30 transition-colors"
               >
                 Start For Visit
-              </motion.button>
+              </motion.a>
 
               <a
                 href="tel:+917845556827"

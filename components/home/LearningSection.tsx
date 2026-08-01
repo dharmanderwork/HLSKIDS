@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Lightbulb, Puzzle, Brain } from "lucide-react";
+import Link from "next/link";
 
 const cards = [
   {
@@ -174,6 +175,7 @@ export default function LearningSection() {
                   </p>
 
                   {/* CTA Button */}
+                  <Link href="/facilities">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -182,6 +184,7 @@ export default function LearningSection() {
                     <card.icon className="w-4 h-4" />
                     Learn More
                   </motion.button>
+                  </Link>
                 </div>
 
                 {/* Bottom Decorative Wave */}

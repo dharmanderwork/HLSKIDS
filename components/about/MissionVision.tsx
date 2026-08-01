@@ -12,7 +12,6 @@ const cards = [
     color: "from-rose-400 to-pink-500",
     bgColor: "bg-rose-50",
     borderColor: "border-rose-200",
-    emoji: "🎯",
   },
   {
     title: "Our Vision",
@@ -22,7 +21,6 @@ const cards = [
     color: "from-sky-400 to-blue-500",
     bgColor: "bg-sky-50",
     borderColor: "border-sky-200",
-    emoji: "👁️",
   },
   {
     title: "Our Values",
@@ -32,7 +30,6 @@ const cards = [
     color: "from-amber-400 to-orange-500",
     bgColor: "bg-amber-50",
     borderColor: "border-amber-200",
-    emoji: "🚀",
   },
   {
     title: "Our Approach",
@@ -42,7 +39,6 @@ const cards = [
     color: "from-emerald-400 to-green-500",
     bgColor: "bg-emerald-50",
     borderColor: "border-emerald-200",
-    emoji: "📚",
   },
 ];
 
@@ -111,13 +107,13 @@ export default function MissionVision() {
                     className={`relative flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br ${card.color} flex items-center justify-center shadow-lg`}
                   >
                     <card.icon className="w-8 h-8 text-white" />
-                    <motion.div
+                    {/* <motion.div
                       animate={{ y: [0, -5, 0] }}
                       transition={{ duration: 2, repeat: Infinity }}
                       className="absolute -top-2 -right-2 text-xl"
                     >
                       {card.emoji}
-                    </motion.div>
+                    </motion.div> */}
                   </motion.div>
 
                   {/* Content */}

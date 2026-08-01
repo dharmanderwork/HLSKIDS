@@ -3,6 +3,7 @@
 
 import { motion } from "framer-motion";
 import { Check, X, Baby, BookOpen, Star, GraduationCap, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const programs = [
   {
@@ -230,6 +231,7 @@ export default function ProgramsComparison() {
                   key={index}
                   className={`p-6 ${program.bgColor} text-center`}
                 >
+                  <Link href="/contact">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -238,6 +240,7 @@ export default function ProgramsComparison() {
                     Enroll Now
                     <ArrowRight className="w-4 h-4" />
                   </motion.button>
+                  </Link>
                 </div>
               ))}
             </div>

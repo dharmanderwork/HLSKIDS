@@ -189,14 +189,14 @@ export default function ProgramsOverview() {
                     </div>
 
                     {/* CTA */}
-                    <motion.button
+                    {/* <motion.button
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       className={`w-full py-3 bg-gradient-to-r ${program.color} text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-shadow flex items-center justify-center gap-2`}
                     >
                       Explore Curriculum
                       <ArrowRight className="w-4 h-4" />
-                    </motion.button>
+                    </motion.button> */}
                   </div>
                 </div>
               </div>

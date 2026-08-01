@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Heart, Shield, Lightbulb, Users, Star, Award, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 const features = [
   {
@@ -12,7 +13,6 @@ const features = [
     color: "from-rose-400 to-pink-500",
     bgColor: "bg-rose-50",
     borderColor: "border-rose-200",
-    emoji: "🎯",
     delay: 0,
   },
   {
@@ -23,7 +23,6 @@ const features = [
     color: "from-sky-400 to-blue-500",
     bgColor: "bg-sky-50",
     borderColor: "border-sky-200",
-    emoji: "👩‍🏫",
     delay: 0.1,
   },
   {
@@ -34,7 +33,6 @@ const features = [
     color: "from-emerald-400 to-green-500",
     bgColor: "bg-emerald-50",
     borderColor: "border-emerald-200",
-    emoji: "🛡️",
     delay: 0.2,
   },
   {
@@ -45,7 +43,6 @@ const features = [
     color: "from-amber-400 to-orange-500",
     bgColor: "bg-amber-50",
     borderColor: "border-amber-200",
-    emoji: "💡",
     delay: 0.3,
   },
 ];
@@ -188,13 +185,13 @@ export default function WhyChooseSection() {
                 >
                   <feature.icon className="w-8 h-8 md:w-10 md:h-10 text-white" />
                   {/* Floating Emoji */}
-                  <motion.div
+                  {/* <motion.div
                     animate={{ y: [0, -5, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
                     className="absolute -top-2 -right-2 text-xl"
                   >
                     {feature.emoji}
-                  </motion.div>
+                  </motion.div> */}
                 </motion.div>
 
                 {/* Content */}
@@ -231,6 +228,7 @@ export default function WhyChooseSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-14 text-center"
         >
+          <Link href="/contact">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -240,6 +238,7 @@ export default function WhyChooseSection() {
             Start Your Child's Journey Today
             <Sparkles className="w-5 h-5" />
           </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

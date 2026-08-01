@@ -123,14 +123,15 @@ export default function Hero() {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start"
             >
-              <motion.button
+              <motion.a
+                    href="/contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="group relative px-8 py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-full shadow-lg shadow-orange-500/30 transition-colors duration-300 flex items-center gap-2"
               >
                 Start For Visit
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </motion.button>
+              </motion.a>
             </motion.div>
           </motion.div>
 
