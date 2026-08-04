@@ -13,7 +13,6 @@ const categories = [
     bgColor: "bg-orange-50",
     borderColor: "border-orange-200",
     count: "500+",
-    emoji: "📸",
   },
   {
     id: "classroom",
@@ -23,7 +22,6 @@ const categories = [
     bgColor: "bg-sky-50",
     borderColor: "border-sky-200",
     count: "120+",
-    emoji: "🎨",
   },
   {
     id: "events",
@@ -33,7 +31,6 @@ const categories = [
     bgColor: "bg-pink-50",
     borderColor: "border-pink-200",
     count: "80+",
-    emoji: "🎉",
   },
   {
     id: "sports",
@@ -43,7 +40,6 @@ const categories = [
     bgColor: "bg-emerald-50",
     borderColor: "border-emerald-200",
     count: "60+",
-    emoji: "🏆",
   },
   {
     id: "activities",
@@ -53,7 +49,6 @@ const categories = [
     bgColor: "bg-purple-50",
     borderColor: "border-purple-200",
     count: "150+",
-    emoji: "✨",
   },
   {
     id: "celebrations",
@@ -63,7 +58,6 @@ const categories = [
     bgColor: "bg-amber-50",
     borderColor: "border-amber-200",
     count: "90+",
-    emoji: "🎊",
   },
 ];
 
@@ -138,13 +132,13 @@ export default function GalleryCategories() {
               )}
 
               {/* Emoji float */}
-              <motion.div
+              {/* <motion.div
                 animate={{ y: [0, -5, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
                 className="absolute -top-2 -right-2 text-lg"
               >
                 {cat.emoji}
-              </motion.div>
+              </motion.div> */}
             </motion.button>
           ))}
         </div>

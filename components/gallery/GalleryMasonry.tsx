@@ -5,10 +5,21 @@ import { useState } from "react";
 import Image from "next/image";
 import { X, ZoomIn, Heart, Share2 } from "lucide-react";
 
+//  src: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&h=800&fit=crop",
+// https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=400&fit=crop,
+// https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&h=600&fit=crop
+// https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=600&h=800&fit=crop
+// https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=600&h=600&fit=crop
+// https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop
+// https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?w=600&h=800&fit=crop
+// https://images.unsplash.com/photo-1566004100631-35d015d6a491?w=600&h=600&fit=crop
+// https://images.unsplash.com/photo-1571210862729-78a52d3779a2?w=600&h=400&fit=crop
+
+const imges:any[] = [];
 const galleryItems = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&h=800&fit=crop",
+    src: "/images/IMG13.jpg",
     title: "First Day at School",
     category: "classroom",
     likes: 234,
@@ -16,47 +27,47 @@ const galleryItems = [
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=400&fit=crop",
+    src: "/images/IMG14.jpg",
     title: "Art & Craft Time",
     category: "activities",
     likes: 189,
-    size: "wide",
-  },
-  {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&h=600&fit=crop",
-    title: "Sports Day Fun",
-    category: "sports",
-    likes: 312,
-    size: "normal",
-  },
-  {
-    id: 4,
-    src: "https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=600&h=800&fit=crop",
-    title: "Independence Day",
-    category: "events",
-    likes: 456,
     size: "tall",
   },
   {
+    id: 3,
+    src: "/images/IMG6.jpg",
+    title: "Sports Day Fun",
+    category: "sports",
+    likes: 312,
+    size: "wide",
+  },
+  {
+    id: 4,
+    src: "/images/IMG1.jpg",
+    title: "Independence Day",
+    category: "events",
+    likes: 456,
+    size: "wide",
+  },
+  {
     id: 5,
-    src: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=400&fit=crop",
-    title: "Painting Competition",
+    src: "/images/IMG8.jpg",
+    title: "Dancing Competition",
     category: "activities",
     likes: 278,
     size: "wide",
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=600&h=600&fit=crop",
-    title: "Diwali Celebration",
+    src: "/images/IMG9.jpg",
+    title: "Staff Group Photo",
     category: "celebrations",
     likes: 523,
-    size: "normal",
+    size: "wide",
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop",
+    src: "/images/IMG11.jpg",
     title: "Reading Corner",
     category: "classroom",
     likes: 167,
@@ -64,7 +75,7 @@ const galleryItems = [
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?w=600&h=800&fit=crop",
+    src: "/images/IMG10.jpg",
     title: "Annual Day",
     category: "events",
     likes: 678,
@@ -72,36 +83,36 @@ const galleryItems = [
   },
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1566004100631-35d015d6a491?w=600&h=600&fit=crop",
-    title: "Music Class",
-    category: "activities",
+    src: "/images/IMG4.jpg",
+    title: "Staff Photo",
+    category: "celebrations",
     likes: 245,
-    size: "normal",
+    size: "tall",
   },
   {
     id: 10,
-    src: "https://images.unsplash.com/photo-1571210862729-78a52d3779a2?w=600&h=400&fit=crop",
-    title: "Yoga Session",
+    src: "/images/IMG7.jpg",
+    title: "Student Group Activity",
     category: "sports",
     likes: 198,
     size: "wide",
   },
-  {
-    id: 11,
-    src: "https://images.unsplash.com/photo-1602507343582-9c2b7f3b0a1e?w=600&h=800&fit=crop",
-    title: "Christmas Party",
-    category: "celebrations",
-    likes: 445,
-    size: "tall",
-  },
-  {
-    id: 12,
-    src: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=600&h=400&fit=crop",
-    title: "Science Experiment",
-    category: "classroom",
-    likes: 289,
-    size: "wide",
-  },
+  // {
+  //   id: 11,
+  //   src: "https://images.unsplash.com/photo-1602507343582-9c2b7f3b0a1e?w=600&h=800&fit=crop",
+  //   title: "Christmas Party",
+  //   category: "celebrations",
+  //   likes: 445,
+  //   size: "tall",
+  // },
+  // {
+  //   id: 12,
+  //   src: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=600&h=400&fit=crop",
+  //   title: "Science Experiment",
+  //   category: "classroom",
+  //   likes: 289,
+  //   size: "wide",
+  // },
 ];
 
 export default function GalleryMasonry() {

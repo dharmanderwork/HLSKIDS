@@ -172,7 +172,7 @@ export default function ProgramsComparison() {
                   className={`p-6 ${program.bgColor} border-b-2 ${program.borderColor} text-center`}
                 >
                   <div
-                    className={`w-12 h-12 rounded-xl bg-gradient-to-br ${program.color} flex items-center justify-center shadow-md mx-auto mb-3`}
+                    className={`w-12 h-12 rounded-xl bg-linear-to-br ${program.color} flex items-center justify-center shadow-md mx-auto mb-3`}
                   >
                     <program.icon className="w-6 h-6 text-white" />
                   </div>
@@ -205,7 +205,7 @@ export default function ProgramsComparison() {
                   >
                     {program.features[feature as keyof typeof program.features] ? (
                       <div
-                        className={`w-8 h-8 rounded-full bg-gradient-to-br ${program.color} flex items-center justify-center shadow-sm`}
+                        className={`w-8 h-8 rounded-full bg-linear-to-br ${program.color} flex items-center justify-center shadow-sm`}
                       >
                         <Check className="w-4 h-4 text-white" />
                       </div>
