@@ -109,8 +109,9 @@ export default function AboutHero() {
               <div className="absolute -bottom-6 -right-6 w-full h-full bg-gradient-to-br from-purple-200 to-blue-200 rounded-[3rem] -rotate-3" />
 
               <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white">
+                {/* https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=500&fit=crop */}
                 <Image
-                  src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=500&fit=crop"
+                  src="/images/IMG3.jpg"
                   alt="HLS KIDS Learning Environment"
                   width={600}
                   height={500}

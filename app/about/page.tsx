@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="w-full">
+    <main className="w-full pt-10">
       <AboutHero />
       <MissionVision />
       <JourneyTimeline />
