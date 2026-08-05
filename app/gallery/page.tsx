@@ -14,10 +14,10 @@ export default function GalleryPage() {
   return (
     <main className="w-full pt-10">
       <GalleryHero />
-      <GalleryCategories />
+      {/* <GalleryCategories /> */}
       <GalleryMasonry />
       <GalleryGrid />
-      <GalleryCta />
+      {/* <GalleryCta /> */}
     </main>
   );
 }

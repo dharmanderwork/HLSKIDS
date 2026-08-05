@@ -106,7 +106,7 @@ export default function GalleryHero() {
             </motion.p>
 
             {/* Stats Pills */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.6 }}
@@ -124,7 +124,7 @@ export default function GalleryHero() {
                 <span className="text-lg">🏆</span>
                 <span className="text-sm font-bold text-gray-700">Awards</span>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* RIGHT - PHOTO COLLAGE */}
