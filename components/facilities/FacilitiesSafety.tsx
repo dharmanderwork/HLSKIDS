@@ -10,7 +10,6 @@ const safetyMeasures = [
     icon: Eye,
     color: "from-red-400 to-rose-500",
     bgColor: "bg-red-50",
-    emoji: "📹",
   },
   {
     title: "Biometric Access",
@@ -18,7 +17,6 @@ const safetyMeasures = [
     icon: Fingerprint,
     color: "from-blue-400 to-indigo-500",
     bgColor: "bg-blue-50",
-    emoji: "🔐",
   },
   {
     title: "Trained Security Staff",
@@ -26,7 +24,6 @@ const safetyMeasures = [
     icon: ShieldCheck,
     color: "from-emerald-400 to-green-500",
     bgColor: "bg-emerald-50",
-    emoji: "🛡️",
   },
   {
     title: "Emergency Protocols",
@@ -34,7 +31,6 @@ const safetyMeasures = [
     icon: Siren,
     color: "from-orange-400 to-amber-500",
     bgColor: "bg-orange-50",
-    emoji: "🚨",
   },
 ];
 
@@ -99,7 +95,7 @@ export default function FacilitiesSafety() {
                 <motion.div
                   whileHover={{ rotate: [0, -10, 10, 0] }}
                   transition={{ duration: 0.5 }}
-                  className={`flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg`}
+                  className={`shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg`}
                 >
                   <item.icon className="w-8 h-8 text-white" />
                 </motion.div>
@@ -110,13 +106,13 @@ export default function FacilitiesSafety() {
                     <h3 className="text-xl font-bold text-gray-800 font-heading group-hover:text-red-500 transition-colors">
                       {item.title}
                     </h3>
-                    <motion.div
+                    {/* <motion.div
                       animate={{ y: [0, -5, 0] }}
                       transition={{ duration: 2, repeat: Infinity }}
                       className="text-xl"
                     >
                       {item.emoji}
-                    </motion.div>
+                    </motion.div> */}
                   </div>
                   <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                     {item.description}
@@ -124,7 +120,7 @@ export default function FacilitiesSafety() {
                 </div>
 
                 {/* Decorative */}
-                <div className={`absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-br ${item.color} opacity-10 rounded-tl-full`} />
+                <div className={`absolute bottom-0 right-0 w-24 h-24 bg-linear-to-br ${item.color} opacity-10 rounded-tl-full`} />
               </div>
             </motion.div>
           ))}

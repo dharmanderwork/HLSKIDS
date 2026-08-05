@@ -16,42 +16,36 @@ const features = [
     description: "Fully AC classrooms for comfortable learning in all seasons.",
     icon: AirVent,
     color: "bg-sky-100 text-sky-600",
-    emoji: "❄️",
   },
   {
     title: "Purified Water",
     description: "RO purified drinking water stations on every floor.",
     icon: Droplets,
     color: "bg-cyan-100 text-cyan-600",
-    emoji: "💧",
   },
   {
     title: "Solar Power",
     description: "Eco-friendly solar panels for sustainable energy use.",
     icon: Sun,
     color: "bg-yellow-100 text-yellow-600",
-    emoji: "☀️",
   },
   {
     title: "High-Speed WiFi",
     description: "Campus-wide internet for digital learning resources.",
     icon: Wifi,
     color: "bg-purple-100 text-purple-600",
-    emoji: "📶",
   },
   {
     title: "Green Campus",
     description: "Lush gardens and open spaces for outdoor activities.",
     icon: Trees,
     color: "bg-emerald-100 text-emerald-600",
-    emoji: "🌳",
   },
   {
     title: "Smart Boards",
     description: "Interactive digital boards in every classroom.",
     icon: Monitor,
     color: "bg-orange-100 text-orange-600",
-    emoji: "💻",
   },
 ];
 
@@ -59,7 +53,7 @@ export default function FacilitiesFeatures() {
   return (
     <section className="relative w-full bg-gradient-to-b from-emerald-50/50 to-white py-16 md:py-24 overflow-hidden">
       {/* Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      {/* <div className="absolute inset-0 opacity-5">
         <div
           className="w-full h-full"
           style={{
@@ -68,7 +62,7 @@ export default function FacilitiesFeatures() {
             backgroundRepeat: "repeat",
           }}
         />
-      </div>
+      </div> */}
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -110,13 +104,13 @@ export default function FacilitiesFeatures() {
               </motion.div>
 
               {/* Emoji */}
-              <motion.div
+              {/* <motion.div
                 animate={{ y: [0, -5, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
                 className="absolute top-4 right-4 text-xl"
               >
                 {feature.emoji}
-              </motion.div>
+              </motion.div> */}
 
               <h3 className="text-lg font-bold text-gray-800 font-heading mb-2 group-hover:text-emerald-600 transition-colors">
                 {feature.title}

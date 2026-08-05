@@ -22,7 +22,6 @@ const facilities = [
     color: "from-sky-400 to-blue-500",
     bgColor: "bg-sky-50",
     borderColor: "border-sky-200",
-    emoji: "📚",
   },
   {
     title: "Art & Craft Studio",
@@ -32,7 +31,6 @@ const facilities = [
     color: "from-pink-400 to-rose-500",
     bgColor: "bg-pink-50",
     borderColor: "border-pink-200",
-    emoji: "🎨",
   },
   {
     title: "Music & Dance Room",
@@ -42,7 +40,6 @@ const facilities = [
     color: "from-purple-400 to-violet-500",
     bgColor: "bg-purple-50",
     borderColor: "border-purple-200",
-    emoji: "🎵",
   },
   {
     title: "Indoor Play Zone",
@@ -52,7 +49,6 @@ const facilities = [
     color: "from-orange-400 to-amber-500",
     bgColor: "bg-orange-50",
     borderColor: "border-orange-200",
-    emoji: "🎮",
   },
   {
     title: "Nutritious Cafeteria",
@@ -62,7 +58,6 @@ const facilities = [
     color: "from-emerald-400 to-green-500",
     bgColor: "bg-emerald-50",
     borderColor: "border-emerald-200",
-    emoji: "🍎",
   },
   {
     title: "Safe Transport",
@@ -72,7 +67,6 @@ const facilities = [
     color: "from-yellow-400 to-amber-500",
     bgColor: "bg-yellow-50",
     borderColor: "border-yellow-200",
-    emoji: "🚌",
   },
   {
     title: "CCTV Security",
@@ -82,7 +76,6 @@ const facilities = [
     color: "from-red-400 to-rose-500",
     bgColor: "bg-red-50",
     borderColor: "border-red-200",
-    emoji: "📹",
   },
   {
     title: "Medical Room",
@@ -92,7 +85,6 @@ const facilities = [
     color: "from-cyan-400 to-teal-500",
     bgColor: "bg-cyan-50",
     borderColor: "border-cyan-200",
-    emoji: "🏥",
   },
 ];
 
@@ -172,13 +164,13 @@ export default function FacilitiesGrid() {
                   </div>
 
                   {/* Emoji */}
-                  <motion.div
+                  {/* <motion.div
                     animate={{ y: [0, -5, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
                     className="absolute top-4 left-4 text-2xl"
                   >
                     {facility.emoji}
-                  </motion.div>
+                  </motion.div> */}
                 </div>
 
                 {/* Content */}
