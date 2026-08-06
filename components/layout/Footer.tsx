@@ -384,7 +384,7 @@ export default function Footer() {
 
                         {/* Copyright */}
                         <div className="text-center md:text-right">
-                            <p className="text-green-200 text-xs">© 2024 HLS Kids Play School</p>
+                            <p className="text-green-200 text-xs">© 2026 HLS Kids Play School</p>
                             <p className="text-white text-xs font-medium">All rights reserved ❤️</p>
                         </div>
                     </div>
