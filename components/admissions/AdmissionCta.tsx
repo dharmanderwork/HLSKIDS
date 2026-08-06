@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Calendar, Phone, ArrowRight, MessageCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function AdmissionCta() {
   return (
@@ -48,10 +49,11 @@ export default function AdmissionCta() {
             <span className="text-yellow-300">Seat?</span>
           </h2>
           <p className="text-white/90 text-base md:text-lg max-w-2xl mx-auto mb-10">
-            Limited seats available for 2024-25 session. Don't miss this opportunity to give your child the best start in life!
+            Limited seats available for 2026-27 session. Don't miss this opportunity to give your child the best start in life!
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+            <Link href="/contact">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -60,6 +62,7 @@ export default function AdmissionCta() {
               <Calendar className="w-5 h-5" />
               Apply Online Now
             </motion.button>
+            </Link>
             <motion.a
               href="tel:+917845556827"
               whileHover={{ scale: 1.05 }}
@@ -79,7 +82,7 @@ export default function AdmissionCta() {
               <span>WhatsApp: +91 78455 56827</span>
             </div>
             <div className="hidden md:block w-1 h-1 bg-white/50 rounded-full" />
-            <div>Email: admissions@hlskids.in</div>
+            <div>Email: info@hlskids.in</div>
             <div className="hidden md:block w-1 h-1 bg-white/50 rounded-full" />
             <div>Helpline: 10AM - 6PM (Mon-Sat)</div>
           </div>

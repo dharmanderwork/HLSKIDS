@@ -16,27 +16,27 @@ const leaders = [
       "Founder President AUAA (Allahabad University Alumni Association)",
       "Educationist",
     ],
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop",
+    image: "/images/OWNER1.png",
     color: "from-purple-500 to-indigo-600",
     bgColor: "bg-purple-50",
     borderColor: "border-purple-200",
-    emoji: "👔",
     icon: Award,
   },
   {
     name: "Snehal Sachan",
     role: "Director",
-    company: "HLS Education Pvt Ltd",
+    company: "HLS Education Pvt Ltd & HLS KIDS",
     additional: [
-      "BA Mass Communication",
-      "PGDM from Delhi School of Communication",
+      "Postgraduate in Marketing Communication",
+      "Bachelor’s in Journalism & Mass Communication",
+      "Specializes in branding, marketing communication and digital outreach.",
       "Driving innovation in early childhood education",
+      "Works towards building strong parent engagement and enhancing the HLS Kids experience."
     ],
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop",
+    image: "/images/OWNER2.jpg",
     color: "from-pink-500 to-rose-600",
     bgColor: "bg-pink-50",
     borderColor: "border-pink-200",
-    emoji: "💼",
     icon: BookOpen,
   },
 ];
@@ -150,13 +150,13 @@ export default function LeadershipSection() {
                     >
                       <leader.icon className="w-5 h-5 text-white" />
                     </motion.div>
-                    <motion.div
+                    {/* <motion.div
                       animate={{ y: [0, -5, 0] }}
                       transition={{ duration: 2, repeat: Infinity }}
                       className="text-2xl"
                     >
                       {leader.emoji}
-                    </motion.div>
+                    </motion.div> */}
                   </div>
 
                   <h3 className="text-2xl md:text-3xl font-extrabold text-gray-800 font-heading mb-1 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500 transition-all">

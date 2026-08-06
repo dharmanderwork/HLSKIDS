@@ -1,64 +1,58 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FileText, Phone, ClipboardCheck, Calendar, BookOpen, PartyPopper } from "lucide-react";
+import { FileText, Phone, ClipboardCheck, Calendar, BookOpen, PartyPopper, UserCheck } from "lucide-react";
 
 const steps = [
   {
     step: "01",
-    title: "Fill Enquiry Form",
-    description: "Complete the online admission enquiry form with your child's details and your contact information.",
-    icon: FileText,
+    title: "Connect With Us",
+    description: "Fill out the enquiry form or get in touch with our admissions team. We'll understand your requirements and guide you through the next steps.",
+    icon: Phone,
     color: "from-rose-400 to-pink-500",
-    emoji: "📝",
   },
   {
     step: "02",
-    title: "Counseling Call",
-    description: "Our admissions counselor will call you to understand your requirements and answer all your questions.",
-    icon: Phone,
+    title: "Visit HLS Kids",
+    description: "Schedule a campus visit to explore our learning spaces, meet our educators, and experience the HLS Kids environment firsthand.",
+    icon: BookOpen,
     color: "from-sky-400 to-blue-500",
-    emoji: "📞",
   },
   {
     step: "03",
-    title: "Campus Visit",
-    description: "Schedule a campus tour to see our facilities, meet teachers, and experience the HLS KIDS environment.",
-    icon: Calendar,
+    title: "Parent Interaction",
+    description: "A one-on-one interaction with our admissions team to understand your child's interests, routine, and developmental needs, while answering any questions you may have.",
+    icon: UserCheck,
     color: "from-amber-400 to-orange-500",
-    emoji: "🏫",
   },
   {
     step: "04",
-    title: "Application Form",
-    description: "Submit the completed application form along with required documents (birth certificate, photos, etc.).",
+    title: "Complete Your Admission",
+    description: "Submit the required documents, complete the admission formalities, and confirm your child's enrolment.",
     icon: ClipboardCheck,
     color: "from-emerald-400 to-green-500",
-    emoji: "📋",
   },
   {
     step: "05",
-    title: "Assessment",
-    description: "A friendly interaction session with the child to understand their readiness and place them in the right program.",
-    icon: BookOpen,
-    color: "from-purple-400 to-violet-500",
-    emoji: "🎯",
-  },
-  {
-    step: "06",
-    title: "Welcome Aboard!",
-    description: "Pay the admission fee, collect your welcome kit, and get ready for an amazing learning journey!",
+    title: "Welcome to the HLS Family",
+    description: "Once the admission is confirmed, you'll receive all the onboarding information to help your child begin their learning journey comfortably.",
     icon: PartyPopper,
-    color: "from-pink-400 to-rose-500",
-    emoji: "🎉",
+    color: "from-purple-400 to-violet-500",
   },
+  // {
+  //   step: "06",
+  //   title: "Welcome Aboard!",
+  //   description: "Pay the admission fee, collect your welcome kit, and get ready for an amazing learning journey!",
+  //   icon: PartyPopper,
+  //   color: "from-pink-400 to-rose-500",
+  // },
 ];
 
 export default function AdmissionProcess() {
   return (
     <section className="relative w-full bg-gradient-to-b from-amber-50/50 to-white py-16 md:py-24 overflow-hidden">
       {/* Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      {/* <div className="absolute inset-0 opacity-5">
         <div
           className="w-full h-full"
           style={{
@@ -67,7 +61,7 @@ export default function AdmissionProcess() {
             backgroundRepeat: "repeat",
           }}
         />
-      </div>
+      </div> */}
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -127,13 +121,13 @@ export default function AdmissionProcess() {
                   </div>
 
                   {/* Emoji */}
-                  <motion.div
+                  {/* <motion.div
                     animate={{ y: [0, -5, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
                     className="absolute top-6 right-6 text-2xl"
                   >
                     {step.emoji}
-                  </motion.div>
+                  </motion.div> */}
 
                   <h3 className="text-xl font-bold text-gray-900 font-heading mb-3 group-hover:text-emerald-600 transition-colors">
                     {step.title}

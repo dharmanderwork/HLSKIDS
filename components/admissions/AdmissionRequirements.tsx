@@ -1,46 +1,103 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FileCheck, Camera, Syringe, HeartPulse, Baby, UserCheck } from "lucide-react";
+import { FileCheck, Camera, Syringe, HeartPulse, Baby, UserCheck, School, FileText, Users, MapPin } from "lucide-react";
+
+// const requirements = [
+//   {
+//     title: "Birth Certificate",
+//     description: "Original and photocopy of the child's birth certificate for age verification.",
+//     icon: Baby,
+//     color: "bg-rose-100 text-rose-600"
+//   },
+//   {
+//     title: "Passport Photos",
+//     description: "4 recent passport-size photographs of the child and 2 of each parent.",
+//     icon: Camera,
+//     color: "bg-sky-100 text-sky-600"
+//   },
+//   {
+//     title: "Aadhar Card",
+//     description: "Copy of child's Aadhar card (if available) and parent's Aadhar card.",
+//     icon: FileCheck,
+//     color: "bg-amber-100 text-amber-600"
+//   },
+//   {
+//     title: "Immunization Record",
+//     description: "Updated vaccination card showing all mandatory immunizations.",
+//     icon: Syringe,
+//     color: "bg-emerald-100 text-emerald-600"
+//   },
+//   {
+//     title: "Medical Certificate",
+//     description: "Basic health certificate from a registered medical practitioner.",
+//     icon: HeartPulse,
+//     color: "bg-red-100 text-red-600"
+//   },
+//   {
+//     title: "Parent ID Proof",
+//     description: "Any government-issued ID proof of both parents (PAN/Voter ID/Passport).",
+//     icon: UserCheck,
+//     color: "bg-purple-100 text-purple-600"
+    
+//   },
+// ];
 
 const requirements = [
   {
+    title: "Completed Admission Form",
+    description: "Duly filled and signed admission application form.",
+    icon: FileText,
+    color: "bg-blue-100 text-blue-600"
+  },
+  {
     title: "Birth Certificate",
-    description: "Original and photocopy of the child's birth certificate for age verification.",
+    description: "Copy of the child's birth certificate for age verification. Original may be required for verification.",
     icon: Baby,
     color: "bg-rose-100 text-rose-600"
   },
   {
-    title: "Passport Photos",
-    description: "4 recent passport-size photographs of the child and 2 of each parent.",
+    title: "Child's Photographs",
+    description: "2 recent passport-size photographs of the child.",
     icon: Camera,
     color: "bg-sky-100 text-sky-600"
   },
   {
-    title: "Aadhar Card",
-    description: "Copy of child's Aadhar card (if available) and parent's Aadhar card.",
+    title: "Parents' Photographs",
+    description: "2 recent passport-size photographs of each parent/guardian.",
+    icon: Users,
+    color: "bg-indigo-100 text-indigo-600"
+  },
+  {
+    title: "Child's Aadhaar Card",
+    description: "Copy of child's Aadhaar card (if available). Original may be required for verification.",
     icon: FileCheck,
     color: "bg-amber-100 text-amber-600"
   },
   {
-    title: "Immunization Record",
-    description: "Updated vaccination card showing all mandatory immunizations.",
+    title: "Parent's Aadhaar Card",
+    description: "Copy of parent/guardian's Aadhaar card. Original may be required for verification.",
+    icon: UserCheck,
+    color: "bg-purple-100 text-purple-600"
+  },
+  {
+    title: "Address Proof",
+    description: "Valid address proof document for verification.",
+    icon: MapPin,
+    color: "bg-teal-100 text-teal-600"
+  },
+  {
+    title: "Vaccination Record",
+    description: "Updated immunization/vaccination record showing all mandatory vaccinations.",
     icon: Syringe,
     color: "bg-emerald-100 text-emerald-600"
   },
   {
-    title: "Medical Certificate",
-    description: "Basic health certificate from a registered medical practitioner.",
-    icon: HeartPulse,
-    color: "bg-red-100 text-red-600"
-  },
-  {
-    title: "Parent ID Proof",
-    description: "Any government-issued ID proof of both parents (PAN/Voter ID/Passport).",
-    icon: UserCheck,
-    color: "bg-purple-100 text-purple-600"
-    
-  },
+    title: "Transfer Certificate",
+    description: "Required only if the child is changing from another school.",
+    icon: School,
+    color: "bg-orange-100 text-orange-600"
+  }
 ];
 
 export default function AdmissionRequirements() {
@@ -134,9 +191,9 @@ export default function AdmissionRequirements() {
           className="mt-10 bg-amber-50 border-2 border-amber-200 rounded-[2rem] p-6 md:p-8 text-center"
         >
           <p className="text-amber-800 text-sm md:text-base">
-            <span className="font-bold">Note:</span> All documents must be self-attested. Original documents will be verified at the time of admission. For any queries, please contact our admissions office at{" "}
+            <span className="font-bold">Note:</span> Original documents may be required for verification during the admission process. For any queries, please contact our admissions office at{" "}
             <a href="tel:+917845556827" className="font-bold text-amber-600 hover:underline">
-              +91 78455 56827
+              +91 78455 56827S
             </a>
           </p>
         </motion.div>

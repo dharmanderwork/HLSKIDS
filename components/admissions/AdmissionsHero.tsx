@@ -3,12 +3,13 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Sparkles, Calendar, Clock } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AdmissionsHero() {
   return (
     <section className="relative w-full overflow-hidden min-h-[75vh] flex items-center pt-20">
       {/* Background Pattern */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <Image
           src="/pattern-3.png"
           alt="Background Pattern"
@@ -17,7 +18,7 @@ export default function AdmissionsHero() {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-br from-amber-50/95 via-orange-50/95 to-yellow-50/95" />
-      </div>
+      </div> */}
 
       {/* Floating Decorations */}
       <motion.div
@@ -67,7 +68,7 @@ export default function AdmissionsHero() {
             >
               <span className="text-lg">🔥</span>
               <span className="text-sm font-bold uppercase tracking-wider">
-                Admissions Open 2024-25
+                Admissions Open 2026-27
               </span>
               <span className="text-lg">🔥</span>
             </motion.div>
@@ -95,7 +96,7 @@ export default function AdmissionsHero() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="text-gray-600 text-lg leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Give your child the gift of quality early education. HLS KIDS welcomes applications for Play Group through Senior KG for the academic year 2024-25.
+              Give your child the gift of quality early education. HLS KIDS welcomes applications for Play Group through Senior KG for the academic year 2026-27.
             </motion.p>
 
             {/* Quick Info */}
@@ -107,7 +108,7 @@ export default function AdmissionsHero() {
             >
               <div className="inline-flex items-center gap-2 bg-white rounded-full px-5 py-2.5 shadow-md border border-amber-100">
                 <Calendar className="w-4 h-4 text-amber-500" />
-                <span className="text-sm font-bold text-gray-700">Session: 2024-25</span>
+                <span className="text-sm font-bold text-gray-700">Session: 2026-27</span>
               </div>
               <div className="inline-flex items-center gap-2 bg-white rounded-full px-5 py-2.5 shadow-md border border-orange-100">
                 <Clock className="w-4 h-4 text-orange-500" />
@@ -126,14 +127,15 @@ export default function AdmissionsHero() {
               transition={{ delay: 0.9, duration: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start"
             >
-              <motion.button
+              {/* <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white font-bold text-lg rounded-full shadow-xl hover:shadow-2xl transition-shadow flex items-center justify-center gap-2"
               >
                 <Sparkles className="w-5 h-5" />
                 Apply Now
-              </motion.button>
+              </motion.button> */}
+              <Link href="/contact">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -142,6 +144,7 @@ export default function AdmissionsHero() {
                 <Calendar className="w-5 h-5" />
                 Schedule a Visit
               </motion.button>
+              </Link>
             </motion.div>
           </motion.div>
 

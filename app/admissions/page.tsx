@@ -8,7 +8,7 @@ import AdmissionCta from "@/components/admissions/AdmissionCta";
 export const metadata = {
   title: "Admissions | HLS KIDS",
   description:
-    "Admissions open for Play Group to Senior KG at HLS KIDS. Apply now for 2024-25 session. Easy admission process, affordable fees, and world-class facilities.",
+    "Admissions open for Play Group to Senior KG at HLS KIDS. Apply now for 2026-27 session. Easy admission process, affordable fees, and world-class facilities.",
 };
 
 export default function AdmissionsPage() {
@@ -18,7 +18,7 @@ export default function AdmissionsPage() {
       <AdmissionPrograms />
       <AdmissionProcess />
       <AdmissionRequirements />
-      <AdmissionFees />
+      {/* <AdmissionFees /> */}
       <AdmissionCta />
     </main>
   );

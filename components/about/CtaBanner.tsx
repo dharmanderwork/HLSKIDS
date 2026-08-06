@@ -53,7 +53,7 @@ export default function CtaBanner() {
               <span className="text-yellow-300">Learning Journey?</span>
             </h2>
             <p className="text-white/90 text-base md:text-lg max-w-2xl mx-auto mb-8">
-              Join thousands of happy parents who trust HLS KIDS for their child's early education. Admissions open for 2024-25!
+              Join thousands of happy parents who trust HLS KIDS for their child's early education. Admissions open for 2026-27!
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">

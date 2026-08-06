@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Baby, BookOpen, GraduationCap, Star, Clock, Users, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const programs = [
   {
@@ -183,10 +184,11 @@ export default function AdmissionPrograms() {
 
                   {/* Fee & CTA */}
                   <div className="flex items-center justify-between pt-4 border-t border-gray-200/60">
-                    <div>
+                    {/* <div>
                       <p className="text-xs text-gray-500">Annual Fee</p>
                       <p className="text-xl font-extrabold text-gray-900">{program.fee}</p>
-                    </div>
+                    </div> */}
+                    <Link href="/contact">
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
@@ -194,6 +196,7 @@ export default function AdmissionPrograms() {
                     >
                       Apply Now
                     </motion.button>
+                    </Link>
                   </div>
                 </div>
               </div>
