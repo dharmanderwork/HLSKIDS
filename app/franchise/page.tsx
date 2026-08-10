@@ -19,7 +19,7 @@ export default function FranchisePage() {
       <FranchiseWhy />
       <FranchiseBenefits />
       <FranchiseSupport />
-      <FranchiseInvestment />
+      {/* <FranchiseInvestment /> */}
       <FranchiseForm />
       <FranchiseCta />
     </main>

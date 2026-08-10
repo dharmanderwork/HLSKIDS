@@ -1,11 +1,25 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Baby, BookOpen, GraduationCap, Star, Clock, Users, CheckCircle2 } from "lucide-react";
+import { Baby, BookOpen, GraduationCap, Star, Clock, Users, CheckCircle2, Heart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const programs = [
+    {
+    title: "Day Care",
+    subtitle: "Safe & Nurturing",
+    age: "1.5 - 10 Years",
+    duration: "Full Day / Half Day",
+    icon: Heart,
+    color: "from-violet-400 to-purple-500",
+    bgColor: "bg-violet-50",
+    borderColor: "border-violet-200",
+    image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=300&fit=crop",
+    emoji: "💜",
+    features: ["Safe Environment", "Nutritious Meals", "Homework Support", "Recreational Activities"],
+    fee: "₹5,000/month",
+  },
   {
     title: "Play Group",
     subtitle: "First Steps",
@@ -140,13 +154,13 @@ export default function AdmissionPrograms() {
                   </div>
 
                   {/* Emoji */}
-                  <motion.div
+                  {/* <motion.div
                     animate={{ y: [0, -5, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
                     className="absolute top-4 right-4 text-3xl"
                   >
                     {program.emoji}
-                  </motion.div>
+                  </motion.div> */}
 
                   {/* Icon */}
                   <div className={`absolute bottom-4 right-4 w-14 h-14 rounded-2xl bg-gradient-to-br ${program.color} flex items-center justify-center shadow-lg border-4 border-white`}>
