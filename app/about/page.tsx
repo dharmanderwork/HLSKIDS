@@ -3,6 +3,7 @@ import LeadershipSection from "@/components/about/LeadershipSection";
 import MissionVision from "@/components/about/MissionVision";
 import JourneyTimeline from "@/components/about/JourneyTimeline";
 import CtaBanner from "@/components/about/CtaBanner";
+import AdvisoryBoard from "@/components/about/AdvisoryBoard";
 
 export const metadata = {
   title: "About Us | HLS KIDS",
@@ -16,6 +17,7 @@ export default function AboutPage() {
       <AboutHero />
       <MissionVision />
       <JourneyTimeline />
+      <AdvisoryBoard />
       <LeadershipSection />
       <CtaBanner />
     </main>
