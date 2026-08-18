@@ -10,7 +10,7 @@ const facilities = [
     icon: Shield,
     title: "Safe & Secure Campus",
     description: "CCTV surveillance, child-safe infrastructure, and trained staff ensuring complete safety.",
-    image: "https://images.unsplash.com/photo-1564429238961-dc5ca7f3317a?w=500&h=350&fit=crop",
+    image: "https://images.unsplash.com/photo-1566938089211-5821c49b3548?w=500&h=350&fit=crop",
     color: "from-rose-400 to-pink-500",
   },
   {

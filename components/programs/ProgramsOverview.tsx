@@ -1,10 +1,31 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Baby, BookOpen, Star, GraduationCap, Clock, Users, ArrowRight } from "lucide-react";
+import { Baby, BookOpen, Star, GraduationCap, Clock, Users, ArrowRight,Heart } from "lucide-react";
 import Image from "next/image";
 
 const programs = [
+  {
+    title: "Day Care",
+    subtitle: "Safe & Nurturing",
+    age: "1.5 - 10 Years",
+    duration: "Full Day / Half Day",
+    icon: Heart,
+    color: "from-violet-400 to-purple-500",
+    bgColor: "bg-violet-50",
+    borderColor: "border-violet-200",
+    image:
+      "https://images.unsplash.com/photo-1578349035260-9f3d4042f1f7?w=400&h=300&fit=crop",
+    emoji: "💜",
+    description:
+      "A safe, caring and nurturing environment where children can learn, play, rest and enjoy their day with confidence.",
+    highlights: [
+      "Safe Environment",
+      "Nutritious Meals",
+      "Homework Support",
+      "Recreational Activities",
+    ],
+  },
   {
     title: "Play Group",
     subtitle: "First Steps",
@@ -14,7 +35,7 @@ const programs = [
     color: "from-rose-400 to-pink-500",
     bgColor: "bg-rose-50",
     borderColor: "border-rose-200",
-    image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1578349035260-9f3d4042f1f7?w=400&h=300&fit=crop",
     emoji: "🧸",
     description: "A gentle introduction to the world of learning through play, exploration, and sensory activities.",
     highlights: ["Sensorial Play", "Motor Skills", "Social Interaction", "Rhymes & Songs"],

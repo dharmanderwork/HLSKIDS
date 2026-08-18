@@ -55,7 +55,7 @@ const activities = [
     title: "Drama & Storytelling",
     description: "Role-play, puppet shows, and narrative skills to build confidence and expression.",
     icon: Drama,
-    image: "https://images.unsplash.com/photo-1503095392233-fc233c5a7a4d?w=400&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1701773055020-9d2b09b7ca5e?w=400&h=300&fit=crop",
     color: "from-cyan-400 to-teal-500",
     bgColor: "bg-cyan-50",
     borderColor: "border-cyan-200",

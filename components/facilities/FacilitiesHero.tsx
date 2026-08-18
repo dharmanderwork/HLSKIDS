@@ -132,7 +132,7 @@ export default function FacilitiesHero() {
               className="absolute top-0 left-[5%] w-[60%] h-[65%] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white rotate-[-2deg] z-20"
             >
               <Image
-                src="https://images.unsplash.com/photo-1564429238984-b3cd3a5ba0b4?w=500&h=500&fit=crop"
+                src="images/IMG2.jpg"
                 alt="Modern Classroom"
                 fill
                 className="object-cover"

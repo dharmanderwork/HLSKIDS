@@ -17,7 +17,7 @@ const programs = [
     bgColor: "bg-pink-50",
     borderColor: "border-pink-200",
     icon: Baby,
-    image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1578349035260-9f3d4042f1f7?w=400&h=300&fit=crop",
     badge: "Begin",
     shape: "rounded-tr-[3rem] rounded-bl-[3rem]",
   },
