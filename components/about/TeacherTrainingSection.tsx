@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   BookOpen,
   GraduationCap,
@@ -14,6 +15,7 @@ import {
 const partners = [
   {
     type: "Curriculum Partner",
+    logo: "/logo/smartk-logo.png",
     name: "SmartK Learning",
     description:
       "India's leading early childhood curriculum expert, helping us deliver a structured, engaging and age-appropriate learning experience for young children.",
@@ -24,6 +26,7 @@ const partners = [
   },
   {
     type: "Teacher Training Partner",
+    logo: "/logo/chand-group-logo.png",
     name: "S. Chand Group",
     description:
       "A trusted education company empowering teachers through professional training, helping educators become well-trained, experienced and caring professionals.",
@@ -158,12 +161,27 @@ export default function TeacherTrainingSection() {
 
                   <div className="relative z-10 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
                     {/* Icon / Logo Placeholder */}
-                    <motion.div
+                    {/* <motion.div
                       whileHover={{ scale: 1.05, rotate: 3 }}
                       className={`flex-shrink-0 w-28 h-28 rounded-[2rem] bg-gradient-to-br ${partner.color} flex items-center justify-center shadow-xl border-4 border-white`}
                     >
                       <Icon className="w-12 h-12 text-white" />
-                    </motion.div>
+                    </motion.div> */}
+
+                    {/* Partner Logo */}
+<motion.div
+  whileHover={{ scale: 1.05 }}
+  transition={{ duration: 0.3 }}
+  className="flex-shrink-0 w-32 h-32 md:w-36 md:h-36 rounded-[2rem] bg-white flex items-center justify-center shadow-xl border-4 border-white overflow-hidden p-4"
+>
+  <Image
+    src={partner.logo}
+    alt={`${partner.name} logo`}
+    width={180}
+    height={180}
+    className="w-full h-full object-contain"
+  />
+</motion.div>
 
                     {/* Content */}
                     <div className="flex-1 text-center sm:text-left">
