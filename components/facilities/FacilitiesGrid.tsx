@@ -18,7 +18,7 @@ const facilities = [
     title: "Smart Classrooms",
     description: "Digital learning boards, interactive screens, and age-appropriate furniture for comfortable learning.",
     icon: BookOpen,
-    image: "https://images.unsplash.com/photo-1564429238984-b3cd3a5ba0b4?w=500&h=350&fit=crop",
+    image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=500&h=350&fit=crop",
     color: "from-sky-400 to-blue-500",
     bgColor: "bg-sky-50",
     borderColor: "border-sky-200",

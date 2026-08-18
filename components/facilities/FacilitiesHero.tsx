@@ -164,7 +164,7 @@ export default function FacilitiesHero() {
               className="absolute bottom-[5%] left-[10%] w-[50%] h-[45%] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white rotate-[2deg] z-30"
             >
               <Image
-                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=400&fit=crop"
+                src="images/IMG3.jpg"
                 alt="Learning Activity"
                 fill
                 className="object-cover"
