@@ -127,6 +127,13 @@ export default function FranchiseHero() {
               className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start"
             >
               <motion.button
+              type="button"
+              onClick={() => {
+      document.getElementById("franchise-form")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-violet-500 via-purple-500 to-pink-500 text-white font-bold text-lg rounded-full shadow-xl hover:shadow-2xl transition-shadow flex items-center justify-center gap-2"
@@ -134,14 +141,23 @@ export default function FranchiseHero() {
                 <Rocket className="w-5 h-5" />
                 Apply for Franchise
               </motion.button>
-              <motion.button
+              {/* <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-white text-violet-600 font-bold text-lg rounded-full shadow-lg border-2 border-violet-200 hover:border-violet-400 transition-colors flex items-center justify-center gap-2"
               >
                 <span className="text-lg">📞</span>
                 Talk to Our Team
-              </motion.button>
+              </motion.button> */}
+               <motion.a
+    href="tel:+917845556827"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="px-8 py-4 bg-white text-violet-600 font-bold text-lg rounded-full shadow-lg border-2 border-violet-200 hover:border-violet-400 transition-colors flex items-center justify-center gap-2"
+  >
+    <span className="text-lg">📞</span>
+    Talk to Our Team
+  </motion.a>
             </motion.div>
           </motion.div>
 

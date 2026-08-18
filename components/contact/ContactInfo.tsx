@@ -57,7 +57,7 @@ const contactCards = [
     bgColor: "bg-purple-50",
     borderColor: "border-purple-200",
     emoji: "🎧",
-    href: "tel:+919320063100",
+    href: "tel:+917845556827",
   },
   {
     title: "Website",

@@ -34,7 +34,7 @@ export default function AboutHero() {
                   alt="Happy Student at HLS Kids"
                   width={400}
                   height={400}
-                  className="w-full max-w-[320px] mx-auto h-auto object-contain"
+                  className="w-full max-w-[320px] mx-auto h-auto object-contain " unoptimized
                 />
                 
                 {/* Since 2008 Badge */}

@@ -179,7 +179,7 @@ export default function TeacherTrainingSection() {
     alt={`${partner.name} logo`}
     width={180}
     height={180}
-    className="w-full h-full object-contain"
+    className="w-full h-full object-contain" unoptimized
   />
 </motion.div>
 

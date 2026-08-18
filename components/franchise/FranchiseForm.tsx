@@ -67,7 +67,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   const labelClasses = "flex items-center gap-2 text-sm font-bold text-gray-700 mb-2";
 
   return (
-    <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
+    <section id="franchise-form" className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
       {/* Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div

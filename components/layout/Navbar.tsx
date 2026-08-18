@@ -33,9 +33,16 @@ export default function Navbar() {
           </ul>
 
           {/* Desktop CTA */}
-          <button className="hidden rounded-full bg-orange-500 px-6 py-3 font-semibold text-white transition hover:bg-orange-600 lg:block">
+          {/* <button className="hidden rounded-full bg-orange-500 px-6 py-3 font-semibold text-white transition hover:bg-orange-600 lg:block">
             Admissions Open
-          </button>
+          </button> */}
+
+           <Link
+            href="/admissions"
+            className="hidden rounded-full bg-orange-500 px-6 py-3 font-semibold text-white transition hover:bg-orange-600 lg:block"
+          >
+            Admissions Open
+          </Link>
 
           {/* Mobile Menu Button */}
           <button 
@@ -62,10 +69,19 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-            <li className="pt-2">
+            {/* <li className="pt-2">
               <button className="w-full rounded-full bg-orange-500 px-6 py-3 font-semibold text-white">
                 Admissions Open
               </button>
+            </li> */}
+            <li className="pt-2">
+              <Link
+                href="/admissions"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block w-full text-center rounded-full bg-orange-500 px-6 py-3 font-semibold text-white"
+              >
+                Admissions Open
+              </Link>
             </li>
           </ul>
         </div>

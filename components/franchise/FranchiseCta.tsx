@@ -53,16 +53,27 @@ export default function FranchiseCta() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-            <motion.button
+            {/* <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-white text-violet-600 font-bold text-lg rounded-full shadow-xl hover:shadow-2xl transition-shadow flex items-center gap-2"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp Us
-            </motion.button>
+            </motion.button> */}
             <motion.a
-              href="tel:+919320063100"
+  href="https://wa.me/917845556827?text=Hello%20HLS%20KIDS,%20I%20am%20interested%20in%20the%20franchise%20opportunity."
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="px-10 py-4 bg-white text-violet-600 font-bold text-lg rounded-full shadow-xl hover:shadow-2xl transition-shadow flex items-center gap-2"
+>
+  <MessageCircle className="w-5 h-5" />
+  WhatsApp Us
+</motion.a>
+            <motion.a
+              href="tel:+917845556827"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-white/20 text-white font-bold text-lg rounded-full shadow-lg hover:bg-white/30 transition-colors flex items-center gap-2 backdrop-blur-sm"

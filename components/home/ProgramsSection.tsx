@@ -6,6 +6,22 @@ import { Clock, Users, ArrowRight, Baby, BookOpen, GraduationCap, Sun, Heart } f
 import Link from "next/link";
 
 const programs = [
+   {
+    title: "Day Care",
+    subtitle: "Safe & Nurturing",
+    age: "1.5 - 10 Years",
+    duration: "Full Day / Half Day",
+    description:
+      "A safe, caring and nurturing environment where children can learn, play, rest and enjoy their day with confidence.",
+    color: "from-violet-400 to-purple-500",
+    bgColor: "bg-violet-50",
+    borderColor: "border-violet-200",
+    icon: Heart,
+    image:
+      "https://images.unsplash.com/photo-1578349035260-9f3d4042f1f7?w=400&h=300&fit=crop",
+    badge: "Care",
+    shape: "rounded-tl-[3rem] rounded-br-[3rem]",
+  },
   {
     title: "Play Group",
     subtitle: "Toddlers",
