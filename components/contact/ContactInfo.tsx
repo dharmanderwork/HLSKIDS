@@ -51,7 +51,7 @@ const contactCards = [
   {
     title: "Support",
     info: "Admission Helpline",
-    subInfo: "+91 93200 63100",
+    subInfo: "+91 78455 56827",
     icon: Headphones,
     color: "from-purple-400 to-violet-500",
     bgColor: "bg-purple-50",

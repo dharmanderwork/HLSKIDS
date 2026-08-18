@@ -21,10 +21,47 @@ export default function FranchiseForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thank you for your franchise enquiry! Our team will contact you within 24 hours.");
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   alert("Thank you for your franchise enquiry! Our team will contact you within 24 hours.");
+  // };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("/franchise-form.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: new URLSearchParams(formData).toString(),
+    });
+
+    const result = await response.text();
+
+    if (result.trim() === "success") {
+      alert(
+        "Thank you for your franchise enquiry! Our team will contact you within 24 hours."
+      );
+
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        city: "",
+        state: "",
+        investment: "",
+        property: "",
+        experience: "",
+        message: "",
+      });
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    alert("Unable to submit the form. Please try again.");
+  }
+};
 
   const inputClasses = "w-full px-5 py-3.5 rounded-xl border-2 border-gray-200 bg-white focus:border-violet-400 focus:ring-4 focus:ring-violet-100 outline-none transition-all text-gray-700 placeholder-gray-400";
   const labelClasses = "flex items-center gap-2 text-sm font-bold text-gray-700 mb-2";
@@ -93,8 +130,8 @@ export default function FranchiseForm() {
             {/* Contact */}
             <div className="mt-8 p-6 bg-gradient-to-r from-violet-500 to-purple-500 rounded-[1.5rem] text-white">
               <p className="text-sm opacity-90 mb-1">For urgent queries</p>
-              <p className="text-2xl font-extrabold">+91 93200 63100</p>
-              <p className="text-sm opacity-75 mt-1">franchise@hlskids.in</p>
+              <p className="text-2xl font-extrabold">+91 78455 56827</p>
+              <p className="text-sm opacity-75 mt-1">info@hlskids.in</p>
             </div>
           </motion.div>
 

@@ -17,7 +17,7 @@ const locations = [
   {
     name: "HLS Education Pvt Ltd",
     address: "NX ONE Tower 2, Floor UG, A-016, Tech Zone 4, Greater Noida West, Gautam Buddha Nagar, UP 201306",
-    phone: "+91 93200 63100",
+    phone: "+91 78455 56827",
     type: "Corporate Office",
     color: "from-sky-400 to-blue-500",
     bgColor: "bg-sky-50",

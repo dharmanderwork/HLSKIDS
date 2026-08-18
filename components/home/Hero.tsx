@@ -170,7 +170,7 @@ export default function Hero() {
               className="relative z-20"
             >
               <Image
-                src="/kids-img.png"
+                src="/images/kids-img.png"
                 alt="HLS Kids Play School Students"
                 width={500}
                 height={500}

@@ -74,9 +74,9 @@ export default function FranchiseCta() {
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-white/80">
-            <div>Franchise Helpline: +91 93200 63100</div>
+            <div>Franchise Helpline: +91 78455 56827</div>
             <div className="hidden md:block w-1 h-1 bg-white/50 rounded-full" />
-            <div>Email: franchise@hlskids.in</div>
+            <div>Email: info@hlskids.in</div>
             <div className="hidden md:block w-1 h-1 bg-white/50 rounded-full" />
             <div>Available: Mon-Sat, 10AM-6PM</div>
           </div>

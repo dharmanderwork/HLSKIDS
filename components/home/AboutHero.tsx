@@ -30,7 +30,7 @@ export default function AboutHero() {
               
               <div className="relative bg-gradient-to-br from-yellow-50 to-orange-50 rounded-[30px] p-6 md:p-8 overflow-hidden">
                 <Image
-                  src="/kid-3.png"
+                  src="/images/kid-3.png"
                   alt="Happy Student at HLS Kids"
                   width={400}
                   height={400}

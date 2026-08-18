@@ -19,10 +19,54 @@ export default function ContactForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thank you for your inquiry! We'll get back to you soon.");
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   alert("Thank you for your inquiry! We'll get back to you soon.");
+  // };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("/send-mail.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: new URLSearchParams({
+        parentName: formData.parentName,
+        email: formData.email,
+        phone: formData.phone,
+        childName: formData.childName,
+        childAge: formData.childAge,
+        program: formData.program,
+        message: formData.message,
+      }),
+    });
+
+    const result = await response.text();
+
+    if (result.trim() === "success") {
+      alert("Thank you for your enquiry! We'll get back to you soon.");
+
+      setFormData({
+        parentName: "",
+        email: "",
+        phone: "",
+        childName: "",
+        childAge: "",
+        program: "",
+        message: "",
+      });
+    } else {
+      alert("Something went wrong. Please try again.");
+      console.log(result);
+    }
+  } catch (error) {
+    console.error(error);
+    alert("Unable to send enquiry. Please try again.");
+  }
+};
 
   const inputClasses = "w-full px-5 py-3.5 rounded-xl border-2 border-gray-200 bg-white focus:border-rose-400 focus:ring-4 focus:ring-rose-100 outline-none transition-all text-gray-700 placeholder-gray-400";
   const labelClasses = "flex items-center gap-2 text-sm font-bold text-gray-700 mb-2";
