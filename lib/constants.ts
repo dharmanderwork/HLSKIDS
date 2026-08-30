@@ -5,7 +5,7 @@ export const SITE_CONFIG = {
   
     url: "https://hlskids.in",
   
-    email: "info@hlskids.in",
+    email: "info@hlskids.in , kidshls103@gmail.com",
   
     phone: "+91 XXXXX XXXXX",
   

@@ -48,8 +48,8 @@ const features = [
 ];
 
 const stats = [
-  { number: "15+", label: "Years Experience", suffix: "+", color: "text-rose-500" },
-  { number: "5000", label: "Happy Children", suffix: "+", color: "text-sky-500" },
+  { number: "26", label: "Years Experience", suffix: "+", color: "text-rose-500" },
+  { number: "10000", label: "Happy Children", suffix: "+", color: "text-sky-500" },
   { number: "50", label: "Expert Teachers", suffix: "+", color: "text-emerald-500" },
   { number: "98", label: "Parent Satisfaction", suffix: "%", color: "text-amber-500" },
 ];

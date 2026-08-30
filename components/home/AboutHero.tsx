@@ -110,7 +110,7 @@ export default function AboutHero() {
               </motion.a>
 
               <a
-                href="tel:+917845556827"
+                href="tel:+917303729955"
                 className="flex items-center gap-2 text-gray-700 hover:text-orange-600 transition-colors group"
               >
                 <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center group-hover:bg-orange-200 transition-colors">

@@ -117,7 +117,7 @@ export default function AdmissionCTA() {
                   {[
                     { value: "500+", label: "Happy Students" },
                     { value: "50+", label: "Expert Teachers" },
-                    { value: "15+", label: "Years Experience" },
+                    { value: "26", label: "Years Experience" },
                     { value: "100%", label: "Safe Campus" },
                   ].map((stat, index) => (
                     <motion.div

@@ -64,7 +64,7 @@ export default function AdmissionCta() {
             </motion.button>
             </Link>
             <motion.a
-              href="tel:+917845556827"
+              href="tel:+917303729955"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-white/20 text-white font-bold text-lg rounded-full shadow-lg hover:bg-white/30 transition-colors flex items-center gap-2 backdrop-blur-sm"
@@ -79,10 +79,10 @@ export default function AdmissionCta() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-white/80">
             <div className="flex items-center gap-2">
               <MessageCircle className="w-5 h-5" />
-              <span>WhatsApp: +91 78455 56827</span>
+              <span>WhatsApp: +91 7303729955</span>
             </div>
             <div className="hidden md:block w-1 h-1 bg-white/50 rounded-full" />
-            <div>Email: info@hlskids.in</div>
+            <div>Email: info@hlskids.in , kidshls103@gmail.com</div>
             <div className="hidden md:block w-1 h-1 bg-white/50 rounded-full" />
             <div>Helpline: 10AM - 6PM (Mon-Sat)</div>
           </div>

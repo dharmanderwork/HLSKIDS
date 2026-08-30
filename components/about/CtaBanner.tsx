@@ -89,7 +89,7 @@ export default function CtaBanner() {
                 </div>
                 <div className="text-left">
                   <p className="text-xs text-white/60">Call Us</p>
-                  <p className="font-bold">+91 78455 56827</p>
+                  <p className="font-bold">+91 7303729955</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-white/90">
@@ -98,7 +98,7 @@ export default function CtaBanner() {
                 </div>
                 <div className="text-left">
                   <p className="text-xs text-white/60">Email</p>
-                  <p className="font-bold">info@hlskids.in</p>
+                  <p className="font-bold">info@hlskids.in , kidshls103@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-white/90">

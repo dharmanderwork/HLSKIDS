@@ -61,7 +61,7 @@ export default function ContactCta() {
               Book a Free Consultation
             </motion.button>
             <motion.a
-              href="tel:+917845556827"
+              href="tel:+917303729955"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-white/20 text-white font-bold text-lg rounded-full shadow-lg hover:bg-white/30 transition-colors flex items-center gap-2 backdrop-blur-sm"

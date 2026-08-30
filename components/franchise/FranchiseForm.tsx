@@ -130,8 +130,8 @@ const handleSubmit = async (e: React.FormEvent) => {
             {/* Contact */}
             <div className="mt-8 p-6 bg-gradient-to-r from-violet-500 to-purple-500 rounded-[1.5rem] text-white">
               <p className="text-sm opacity-90 mb-1">For urgent queries</p>
-              <p className="text-2xl font-extrabold">+91 78455 56827</p>
-              <p className="text-sm opacity-75 mt-1">info@hlskids.in</p>
+              <p className="text-2xl font-extrabold">+91 7303729955</p>
+              <p className="text-sm opacity-75 mt-1">info@hlskids.in , kidshls103@gmail.com</p>
             </div>
           </motion.div>
 

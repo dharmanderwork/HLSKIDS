@@ -7,7 +7,7 @@ const locations = [
   {
     name: "HLS KIDS - Kanpur",
     address: "HLS Intercollege Campus, DEVMANPUR, Ghatampur, Kanpur Nagar, Uttar Pradesh",
-    phone: "+91 78455 56827",
+    phone: "+91 7303729955",
     type: "Main Campus",
     color: "from-rose-400 to-pink-500",
     bgColor: "bg-rose-50",
@@ -17,7 +17,7 @@ const locations = [
   {
     name: "HLS Education Pvt Ltd",
     address: "NX ONE Tower 2, Floor UG, A-016, Tech Zone 4, Greater Noida West, Gautam Buddha Nagar, UP 201306",
-    phone: "+91 78455 56827",
+    phone: "+91 7303729955",
     type: "Corporate Office",
     color: "from-sky-400 to-blue-500",
     bgColor: "bg-sky-50",

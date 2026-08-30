@@ -150,7 +150,7 @@ export default function FranchiseHero() {
                 Talk to Our Team
               </motion.button> */}
                <motion.a
-    href="tel:+917845556827"
+    href="tel:+917303729955"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
     className="px-8 py-4 bg-white text-violet-600 font-bold text-lg rounded-full shadow-lg border-2 border-violet-200 hover:border-violet-400 transition-colors flex items-center justify-center gap-2"

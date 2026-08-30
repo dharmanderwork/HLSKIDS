@@ -182,7 +182,7 @@ export default function Footer() {
                                 <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-[5px] border-green-400 shadow-2xl ring-4 ring-green-200/50">
                                     <div className="absolute inset-0 bg-gradient-to-br from-green-300 to-green-500" />
                                     <Image
-                                        src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=400&fit=crop&crop=face"
+                                        src="/images/secondimage.jpg"
                                         alt="Happy Kid at HLS"
                                         fill
                                         className="object-cover relative z-10"
@@ -239,7 +239,7 @@ export default function Footer() {
                                     </div>
                                     <div>
                                         <p className="text-xs text-green-600 font-medium">Call today</p>
-                                        <p className="text-base font-bold text-green-800">+91 78455 56827</p>
+                                        <p className="text-base font-bold text-green-800">+91 7303729955</p>
                                     </div>
                                 </motion.div>
 
@@ -252,7 +252,7 @@ export default function Footer() {
                                     </div>
                                     <div>
                                         <p className="text-xs text-green-600 font-medium">Email us</p>
-                                        <p className="text-sm font-bold text-green-800">info@hlskids.in</p>
+                                        <p className="text-sm font-bold text-green-800">info@hlskids.in , kidshls103@gmail.com</p>
                                     </div>
                                 </motion.div>
 
@@ -379,7 +379,7 @@ export default function Footer() {
                         {/* Center: Contacts */}
                         <div className="text-center">
                             <p className="text-green-200 text-xs">Get in touch</p>
-                            <p className="text-white text-sm font-semibold">info@hlskids.in | +91 78455 56827</p>
+                            <p className="text-white text-sm font-semibold">info@hlskids.in , kidshls103@gmail.com | +91 7303729955</p>
                         </div>
 
                         {/* Copyright */}

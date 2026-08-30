@@ -192,8 +192,8 @@ export default function AdmissionRequirements() {
         >
           <p className="text-amber-800 text-sm md:text-base">
             <span className="font-bold">Note:</span> Original documents may be required for verification during the admission process. For any queries, please contact our admissions office at{" "}
-            <a href="tel:+917845556827" className="font-bold text-amber-600 hover:underline">
-              +91 78455 56827S
+            <a href="tel:+917303729955" className="font-bold text-amber-600 hover:underline">
+              +91 7303729955S
             </a>
           </p>
         </motion.div>

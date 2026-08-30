@@ -62,7 +62,7 @@ export default function FranchiseCta() {
               WhatsApp Us
             </motion.button> */}
             <motion.a
-  href="https://wa.me/917845556827?text=Hello%20HLS%20KIDS,%20I%20am%20interested%20in%20the%20franchise%20opportunity."
+  href="https://wa.me/917303729955?text=Hello%20HLS%20KIDS,%20I%20am%20interested%20in%20the%20franchise%20opportunity."
   target="_blank"
   rel="noopener noreferrer"
   whileHover={{ scale: 1.05 }}
@@ -73,7 +73,7 @@ export default function FranchiseCta() {
   WhatsApp Us
 </motion.a>
             <motion.a
-              href="tel:+917845556827"
+              href="tel:+917303729955"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-white/20 text-white font-bold text-lg rounded-full shadow-lg hover:bg-white/30 transition-colors flex items-center gap-2 backdrop-blur-sm"
@@ -85,9 +85,9 @@ export default function FranchiseCta() {
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-white/80">
-            <div>Franchise Helpline: +91 78455 56827</div>
+            <div>Franchise Helpline: +91 7303729955</div>
             <div className="hidden md:block w-1 h-1 bg-white/50 rounded-full" />
-            <div>Email: info@hlskids.in</div>
+            <div>Email: info@hlskids.in , kidshls103@gmail.com</div>
             <div className="hidden md:block w-1 h-1 bg-white/50 rounded-full" />
             <div>Available: Mon-Sat, 10AM-6PM</div>
           </div>

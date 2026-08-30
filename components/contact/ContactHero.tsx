@@ -99,13 +99,13 @@ export default function ContactHero() {
             transition={{ delay: 0.7, duration: 0.6 }}
             className="flex flex-wrap gap-3 justify-center"
           >
-            <a href="tel:+917845556827" className="inline-flex items-center gap-2 bg-white rounded-full px-5 py-2.5 shadow-md border border-rose-100 hover:border-rose-300 hover:shadow-lg transition-all">
+            <a href="tel:+917303729955" className="inline-flex items-center gap-2 bg-white rounded-full px-5 py-2.5 shadow-md border border-rose-100 hover:border-rose-300 hover:shadow-lg transition-all">
               <Phone className="w-4 h-4 text-rose-500" />
-              <span className="text-sm font-bold text-gray-700">+91 78455 56827</span>
+              <span className="text-sm font-bold text-gray-700">+91 7303729955</span>
             </a>
             <div className="inline-flex items-center gap-2 bg-white rounded-full px-5 py-2.5 shadow-md border border-orange-100">
               <span className="text-lg">📧</span>
-              <span className="text-sm font-bold text-gray-700">info@hlskids.in</span>
+              <span className="text-sm font-bold text-gray-700">info@hlskids.in , kidshls103@gmail.com</span>
             </div>
             <div className="inline-flex items-center gap-2 bg-white rounded-full px-5 py-2.5 shadow-md border border-pink-100">
               <span className="text-lg">⏰</span>

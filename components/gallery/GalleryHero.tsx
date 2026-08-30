@@ -157,7 +157,7 @@ export default function GalleryHero() {
               className="absolute top-[10%] right-[5%] w-[45%] h-[50%] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white rotate-[3deg] z-10"
             >
               <Image
-                src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=400&fit=crop"
+                src="/images/Day_Care.png"
                 alt="Happy Child"
                 fill
                 className="object-cover"
@@ -189,7 +189,7 @@ export default function GalleryHero() {
               className="absolute bottom-[0%] right-[10%] w-[35%] h-[40%] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white rotate-[-2deg] z-10"
             >
               <Image
-                src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=400&fit=crop"
+                src="/images/secondimage.jpg"
                 alt="Art Activity"
                 fill
                 className="object-cover"

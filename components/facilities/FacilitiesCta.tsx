@@ -77,9 +77,9 @@ export default function FacilitiesCta() {
               <span>Delhi & Greater Noida</span>
             </div>
             <div className="hidden md:block w-1 h-1 bg-white/50 rounded-full" />
-            <div>+91 78455 56827</div>
+            <div>+91 7303729955</div>
             <div className="hidden md:block w-1 h-1 bg-white/50 rounded-full" />
-            <div>info@hlskids.in</div>
+            <div>info@hlskids.in , kidshls103@gmail.com</div>
           </div>
         </motion.div>
       </div>
