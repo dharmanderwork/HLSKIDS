@@ -14,7 +14,9 @@ require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
 
-$config = require __DIR__ . '/config.php';
+// $config = require __DIR__ . '/config.php';
+
+$config = require __DIR__ . '/../config.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
@@ -44,12 +46,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->SMTPSecure = $config['smtp_secure'];
         $mail->Port = $config['smtp_port'];
 
-        $mail->setFrom(
-            'info@yourdomain.com',
-            'School Admission Enquiry'
-        );
+        // $mail->setFrom(
+        //     'info@hlskids.co.in',
+        //     'School Admission Enquiry'
+        // );
 
-        $mail->addAddress('info@yourdomain.com');
+        // $mail->addAddress('info@hlskids.co.in');
+        
+        $mail->setFrom(
+        $config['smtp_user'],
+        'School Admission Enquiry'
+    );
+
+    // Receiver
+    $mail->addAddress($config['smtp_user']);
 
         $mail->addReplyTo($email, $parentName);
 
