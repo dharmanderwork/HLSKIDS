@@ -46,12 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->SMTPSecure = $config['smtp_secure'];
         $mail->Port = $config['smtp_port'];
 
-        // $mail->setFrom(
-        //     'info@hlskids.co.in',
-        //     'School Admission Enquiry'
-        // );
-
-        // $mail->addAddress('info@hlskids.co.in');
         
         $mail->setFrom(
         $config['smtp_user'],
