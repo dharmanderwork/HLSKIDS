@@ -13,7 +13,7 @@ export const SITE_CONFIG = {
     "NX ONE Tower 2, Tech Zone 4, Greater Noida West, Uttar Pradesh",
 
   socials: {
-    facebook: "https://www.facebook.com/groups/HLS.COLLEGE",
+    facebook: "https://www.facebook.com/HLS.KIDS/",
     instagram: "https://www.instagram.com/hls_kids",
     youtube: "https://www.youtube.com/@HLSKIDS-Franchise",
     linkedin: "",

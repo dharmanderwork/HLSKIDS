@@ -21,7 +21,7 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-    { icon: FaFacebookF, href: "https://www.facebook.com/groups/HLS.COLLEGE", color: "bg-blue-600", label: "Facebook" },
+    { icon: FaFacebookF, href: "https://www.facebook.com/HLS.KIDS/", color: "bg-blue-600", label: "Facebook" },
     // { icon: FaXTwitter, href: "#", color: "bg-sky-400", label: "Twitter" },
     { icon: FaInstagram, href: "https://www.instagram.com/hls_kids", color: "bg-pink-500", label: "Instagram" },
     { icon: FaYoutube, href: "https://www.youtube.com/@HLSKIDS-Franchise", color: "bg-red-500", label: "Youtube" },
