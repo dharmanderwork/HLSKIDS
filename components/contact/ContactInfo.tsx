@@ -132,13 +132,13 @@ export default function ContactInfo() {
                   className={`relative w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br ${card.color} flex items-center justify-center shadow-lg mb-5`}
                 >
                   <card.icon className="w-8 h-8 text-white" />
-                  <motion.div
+                  {/* <motion.div
                     animate={{ y: [0, -5, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
                     className="absolute -top-2 -right-2 text-xl"
                   >
                     {card.emoji}
-                  </motion.div>
+                  </motion.div> */}
                 </motion.div>
 
                 {/* Content */}

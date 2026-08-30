@@ -74,7 +74,7 @@ export default function FacilitiesSafety() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 font-heading mb-4">
             Your Child's{" "}
             <span className="text-red-500">Safety</span>{" "}
-            is Our Priority
+            is Our unoptimized
           </h2>
         </motion.div>
 

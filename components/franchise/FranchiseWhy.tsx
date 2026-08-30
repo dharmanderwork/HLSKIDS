@@ -7,7 +7,7 @@ const reasons = [
   {
     number: "01",
     title: "Booming Industry",
-    description: "The preschool education sector in India is growing at 25% CAGR. Early childhood education is now a priority for every parent.",
+    description: "The preschool education sector in India is growing at 25% CAGR. Early childhood education is now a unoptimized for every parent.",
     icon: TrendingUp,
     color: "from-emerald-400 to-green-500",
     bgColor: "bg-emerald-50",
@@ -129,13 +129,13 @@ export default function FranchiseWhy() {
                       <h3 className="text-xl md:text-2xl font-bold text-gray-900 font-heading group-hover:text-violet-600 transition-colors">
                         {reason.title}
                       </h3>
-                      <motion.div
+                      {/* <motion.div
                         animate={{ y: [0, -5, 0] }}
                         transition={{ duration: 2, repeat: Infinity }}
                         className="text-xl"
                       >
                         {reason.emoji}
-                      </motion.div>
+                      </motion.div> */}
                     </div>
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-3">
                       {reason.description}

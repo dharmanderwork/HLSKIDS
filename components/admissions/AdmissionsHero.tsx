@@ -15,7 +15,7 @@ export default function AdmissionsHero() {
           alt="Background Pattern"
           fill
           className="object-cover opacity-20"
-          priority
+          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-br from-amber-50/95 via-orange-50/95 to-yellow-50/95" />
       </div> */}
@@ -83,7 +83,7 @@ export default function AdmissionsHero() {
               <span className="relative inline-block">
                 <span className="relative z-10 text-amber-500">Future</span>
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
-                  <path d="M2 8C40 2 80 2 100 6C120 10 160 10 198 4" stroke="#FBBF24" strokeWidth="4" strokeLinecap="round" opacity="0.6"/>
+                  <path d="M2 8C40 2 80 2 100 6C120 10 160 10 198 4" stroke="#FBBF24" strokeWidth="4" strokeLinecap="round" opacity="0.6" />
                 </svg>
               </span>
               <br />
@@ -136,14 +136,14 @@ export default function AdmissionsHero() {
                 Apply Now
               </motion.button> */}
               <Link href="/contact">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white text-amber-600 font-bold text-lg rounded-full shadow-lg border-2 border-amber-200 hover:border-amber-400 transition-colors flex items-center justify-center gap-2"
-              >
-                <Calendar className="w-5 h-5" />
-                Schedule a Visit
-              </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-white text-amber-600 font-bold text-lg rounded-full shadow-lg border-2 border-amber-200 hover:border-amber-400 transition-colors flex items-center justify-center gap-2"
+                >
+                  <Calendar className="w-5 h-5" />
+                  Schedule a Visit
+                </motion.button>
               </Link>
             </motion.div>
           </motion.div>

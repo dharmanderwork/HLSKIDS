@@ -161,13 +161,13 @@ export default function ProgramsOverview() {
                     </div>
 
                     {/* Emoji */}
-                    <motion.div
+                    {/* <motion.div
                       animate={{ y: [0, -5, 0] }}
                       transition={{ duration: 2, repeat: Infinity }}
                       className="absolute bottom-4 right-4 text-3xl"
                     >
                       {program.emoji}
-                    </motion.div>
+                    </motion.div> */}
                   </div>
 
                   {/* Content */}

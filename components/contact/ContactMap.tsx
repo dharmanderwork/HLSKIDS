@@ -13,6 +13,7 @@ const locations = [
     bgColor: "bg-rose-50",
     borderColor: "border-rose-200",
     emoji: "🏫",
+    link:"https://share.google/5VtUEZrneI7czUG0K",
   },
   {
     name: "HLS Education Pvt Ltd",
@@ -23,6 +24,7 @@ const locations = [
     bgColor: "bg-sky-50",
     borderColor: "border-sky-200",
     emoji: "🏢",
+    link: "https://share.google/ffVs0RBn4eLMTp2p2",
   },
 ];
 
@@ -81,8 +83,12 @@ export default function ContactMap() {
             transition={{ duration: 0.6 }}
             className="relative h-[400px] md:h-[500px] rounded-[2rem] overflow-hidden shadow-xl border-4 border-white"
           >
+
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.4764399185!2d80.2784!3d26.5126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDMwJzQ1LjQiTiA4MMKwMTYnNDIuMiJF!5e0!3m2!1sen!2sin!4v1234567890"
+              // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.4764399185!2d80.2784!3d26.5126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDMwJzQ1LjQiTiA4MMKwMTYnNDIuMiJF!5e0!3m2!1sen!2sin!4v1234567890"
+              
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.8832620911908!2d77.43420717474933!3d28.573267986770798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef85e337f7a1%3A0x714f2332816b2a73!2sHLS%20Education%20Group!5e0!3m2!1sen!2sin!4v1788094116292!5m2!1sen!2sin"
+             
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -142,14 +148,16 @@ export default function ContactMap() {
                   </div>
 
                   {/* Get Directions */}
-                  <motion.button
+                  <motion.a
+                  href= {loc.link}
+                  target="_blank"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     className={`mt-5 w-full py-3 bg-gradient-to-r ${loc.color} text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-shadow flex items-center justify-center gap-2`}
                   >
                     <Navigation className="w-4 h-4" />
                     Get Directions
-                  </motion.button>
+                  </motion.a>
                 </div>
               </motion.div>
             ))}

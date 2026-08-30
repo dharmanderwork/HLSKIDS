@@ -14,7 +14,7 @@ export default function ContactHero() {
           alt="Background Pattern"
           fill
           className="object-cover opacity-20"
-          priority
+          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-br from-orange-50/95 via-rose-50/95 to-pink-50/95" />
       </div>
@@ -76,7 +76,7 @@ export default function ContactHero() {
             <span className="relative inline-block">
               <span className="relative z-10 text-rose-500">From You!</span>
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
-                <path d="M2 8C40 2 80 2 100 6C120 10 160 10 198 4" stroke="#FB7185" strokeWidth="4" strokeLinecap="round" opacity="0.6"/>
+                <path d="M2 8C40 2 80 2 100 6C120 10 160 10 198 4" stroke="#FB7185" strokeWidth="4" strokeLinecap="round" opacity="0.6" />
               </svg>
             </span>
           </motion.h1>
@@ -88,7 +88,7 @@ export default function ContactHero() {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-gray-600 text-lg leading-relaxed mb-8"
           >
-            Have questions about admissions, programs, or want to schedule a visit? 
+            Have questions about admissions, programs, or want to schedule a visit?
             Our friendly team is here to help you every step of the way.
           </motion.p>
 

@@ -137,13 +137,13 @@ export default function FranchiseBenefits() {
                   className={`relative w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br ${benefit.color} flex items-center justify-center shadow-lg mb-5`}
                 >
                   <benefit.icon className="w-8 h-8 text-white" />
-                  <motion.div
+                  {/* <motion.div
                     animate={{ y: [0, -5, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
                     className="absolute -top-2 -right-2 text-xl"
                   >
                     {benefit.emoji}
-                  </motion.div>
+                  </motion.div> */}
                 </motion.div>
 
                 <h3 className="text-lg font-bold text-gray-900 font-heading mb-2 group-hover:text-violet-600 transition-colors">

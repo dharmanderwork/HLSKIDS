@@ -21,11 +21,11 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-    { icon: FaFacebookF, href: "#", color: "bg-blue-600", label: "Facebook" },
-    { icon: FaXTwitter, href: "#", color: "bg-sky-400", label: "Twitter" },
-    { icon: FaInstagram, href: "#", color: "bg-pink-500", label: "Instagram" },
-    { icon: FaYoutube, href: "#", color: "bg-red-500", label: "Youtube" },
-    { icon: FaLinkedinIn, href: "#", color: "bg-blue-700", label: "Linkedin" },
+    { icon: FaFacebookF, href: "https://www.facebook.com/groups/HLS.COLLEGE", color: "bg-blue-600", label: "Facebook" },
+    // { icon: FaXTwitter, href: "#", color: "bg-sky-400", label: "Twitter" },
+    { icon: FaInstagram, href: "https://www.instagram.com/hls_kids", color: "bg-pink-500", label: "Instagram" },
+    { icon: FaYoutube, href: "https://www.youtube.com/@HLSKIDS-Franchise", color: "bg-red-500", label: "Youtube" },
+    // { icon: FaLinkedinIn, href: "#", color: "bg-blue-700", label: "Linkedin" },
 ];
 
 export default function Footer() {
@@ -33,7 +33,7 @@ export default function Footer() {
         <footer className="relative w-full overflow-hidden ">
             {/* ========== SKY BACKGROUND SECTION ========== */}
             <div className="relative bg-linear-to-b from-sky-100 via-sky-50 to-green-50">
-             <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-contain  before:bg-repeat"></div>
+                <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-contain  before:bg-repeat"></div>
 
                 {/* Animated Clouds */}
                 <div className="absolute top-6 left-[8%] opacity-70">
@@ -101,7 +101,7 @@ export default function Footer() {
                                 </div>
                             </div>
                             <p className="text-green-800 text-sm leading-relaxed mb-5">
-                                Nurturing young minds through joyful learning, creativity, and holistic development since 2008. Where every child shines!
+                                Nurturing young minds through joyful learning, creativity, and holistic development since 2000. Where every child shines!
                             </p>
 
                             {/* Social Icons */}
@@ -110,6 +110,7 @@ export default function Footer() {
                                     <motion.a
                                         key={index}
                                         href={social.href}
+                                        target="_blank"
                                         aria-label={social.label}
                                         whileHover={{ scale: 1.2, y: -4 }}
                                         whileTap={{ scale: 0.9 }}
@@ -272,10 +273,10 @@ export default function Footer() {
                         </motion.div>
                     </div>
                 </div>
-            {/* </div> */}
+                {/* </div> */}
 
-            {/* ========== YOUR UPLOADED GARDEN BACKGROUND ========== */}
-            {/* <div className="relative w-full"> */}
+                {/* ========== YOUR UPLOADED GARDEN BACKGROUND ========== */}
+                {/* <div className="relative w-full"> */}
                 {/* The uploaded background image */}
                 <div className="relative w-full h-[180px] md:h-[220px] lg:h-[260px]">
                     <Image
@@ -283,7 +284,7 @@ export default function Footer() {
                         alt="Garden Footer Background"
                         fill
                         className="object-cover object-bottom"
-                        priority
+                        unoptimized
                     />
                 </div>
 

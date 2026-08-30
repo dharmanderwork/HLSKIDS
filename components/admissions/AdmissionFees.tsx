@@ -141,13 +141,13 @@ export default function AdmissionFees() {
                 </div>
 
                 {/* Emoji */}
-                <motion.div
+                {/* <motion.div
                   animate={{ y: [0, -5, 0] }}
                   transition={{ duration: 2, repeat: Infinity }}
                   className="absolute top-6 right-6 text-2xl"
                 >
                   {plan.emoji}
-                </motion.div>
+                </motion.div> */}
 
                 <h3 className="text-xl font-bold text-gray-900 font-heading text-center mb-1">
                   {plan.name}

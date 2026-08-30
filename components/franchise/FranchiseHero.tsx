@@ -14,7 +14,7 @@ export default function FranchiseHero() {
           alt="Background Pattern"
           fill
           className="object-cover opacity-20"
-          priority
+          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-br from-violet-50/95 via-purple-50/95 to-pink-50/95" />
       </div>
@@ -82,7 +82,7 @@ export default function FranchiseHero() {
               <span className="relative inline-block">
                 <span className="relative z-10 text-violet-500">Preschool</span>
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
-                  <path d="M2 8C40 2 80 2 100 6C120 10 160 10 198 4" stroke="#A78BFA" strokeWidth="4" strokeLinecap="round" opacity="0.6"/>
+                  <path d="M2 8C40 2 80 2 100 6C120 10 160 10 198 4" stroke="#A78BFA" strokeWidth="4" strokeLinecap="round" opacity="0.6" />
                 </svg>
               </span>
               <br />
@@ -127,13 +127,13 @@ export default function FranchiseHero() {
               className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start"
             >
               <motion.button
-              type="button"
-              onClick={() => {
-      document.getElementById("franchise-form")?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }}
+                type="button"
+                onClick={() => {
+                  document.getElementById("franchise-form")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-violet-500 via-purple-500 to-pink-500 text-white font-bold text-lg rounded-full shadow-xl hover:shadow-2xl transition-shadow flex items-center justify-center gap-2"
@@ -149,15 +149,15 @@ export default function FranchiseHero() {
                 <span className="text-lg">📞</span>
                 Talk to Our Team
               </motion.button> */}
-               <motion.a
-    href="tel:+917303729955"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="px-8 py-4 bg-white text-violet-600 font-bold text-lg rounded-full shadow-lg border-2 border-violet-200 hover:border-violet-400 transition-colors flex items-center justify-center gap-2"
-  >
-    <span className="text-lg">📞</span>
-    Talk to Our Team
-  </motion.a>
+              <motion.a
+                href="tel:+917303729955"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-4 bg-white text-violet-600 font-bold text-lg rounded-full shadow-lg border-2 border-violet-200 hover:border-violet-400 transition-colors flex items-center justify-center gap-2"
+              >
+                <span className="text-lg">📞</span>
+                Talk to Our Team
+              </motion.a>
             </motion.div>
           </motion.div>
 

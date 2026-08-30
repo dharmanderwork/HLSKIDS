@@ -8,7 +8,7 @@ export default function GalleryHero() {
   return (
     <section className="relative w-full overflow-hidden min-h-[70vh] flex items-center">
       <div className="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-[url('/pattern-3.png')] before:opacity-70 before:bg-cover  before:bg-no-repeat"></div>
-     
+
       {/* <div className="absolute inset-0">
         
         <Image
@@ -16,7 +16,7 @@ export default function GalleryHero() {
           alt="Background Pattern"
           fill
           className="object-cover opacity-20"
-          priority
+          unoptimized
         />
         
         <div className="absolute inset-0 bg-gradient-to-br from-orange-50/95 via-yellow-50/95 to-pink-50/95" />
@@ -55,7 +55,7 @@ export default function GalleryHero() {
       {/* ========== MAIN CONTENT ========== */}
       <div className="relative z-10 w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          
+
           {/* LEFT CONTENT */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -88,7 +88,7 @@ export default function GalleryHero() {
               <span className="relative inline-block">
                 <span className="relative z-10 text-orange-500">Joyful</span>
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
-                  <path d="M2 8C40 2 80 2 100 6C120 10 160 10 198 4" stroke="#FFB347" strokeWidth="4" strokeLinecap="round" opacity="0.6"/>
+                  <path d="M2 8C40 2 80 2 100 6C120 10 160 10 198 4" stroke="#FFB347" strokeWidth="4" strokeLinecap="round" opacity="0.6" />
                 </svg>
               </span>
               <br />

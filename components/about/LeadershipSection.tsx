@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Quote, Award, BookOpen, PenTool } from "lucide-react";
+import { Quote, Award, BookOpen, PenTool, MapPin } from "lucide-react";
 import Image from "next/image";
 
 const leaders = [
@@ -238,13 +238,15 @@ export default function LeadershipSection() {
                 </p>
               </div>
 
-              <motion.button
+              <motion.a
+                href= "https://share.google/ffVs0RBn4eLMTp2p2"
+                  target="_blank"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex-shrink-0 px-8 py-3.5 bg-gradient-to-r from-orange-400 to-pink-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-shadow"
+                className="flex-shrink-0 px-8 py-3.5 bg-gradient-to-r from-orange-400 to-pink-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-shadow flex items-center gap-2 "
               >
-                Get Directions 📍
-              </motion.button>
+                Get Directions <MapPin  className="w-4 h-4" />
+              </motion.a>
             </div>
           </div>
         </motion.div>

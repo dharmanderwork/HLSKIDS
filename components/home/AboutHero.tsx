@@ -15,7 +15,7 @@ export default function AboutHero() {
     <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden bg-pattern ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          
+
           {/* Left Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -27,7 +27,7 @@ export default function AboutHero() {
             <div className="relative">
               {/* Background decorative shape */}
               <div className="absolute -top-4 -left-4 w-full h-full bg-yellow-100 rounded-[30px] rotate-3" />
-              
+
               <div className="relative bg-gradient-to-br from-yellow-50 to-orange-50 rounded-[30px] p-6 md:p-8 overflow-hidden">
                 <Image
                   src="/images/kid-3.png"
@@ -36,8 +36,8 @@ export default function AboutHero() {
                   height={400}
                   className="w-full max-w-[320px] mx-auto h-auto object-contain " unoptimized
                 />
-                
-                {/* Since 2008 Badge */}
+
+                {/* Since 2000 Badge */}
                 <motion.div
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
@@ -46,7 +46,7 @@ export default function AboutHero() {
                   className="absolute bottom-8 left-4 md:bottom-12 md:left-8"
                 >
                   <div className="bg-yellow-400 text-white font-bold text-sm px-4 py-2 rounded-xl shadow-lg transform -rotate-6">
-                    Since<br />2008
+                    Since<br />2000
                   </div>
                 </motion.div>
               </div>
@@ -99,9 +99,9 @@ export default function AboutHero() {
 
             {/* CTA & Phone */}
             <div className="flex flex-col sm:flex-row items-center gap-4">
-              
+
               <motion.a
-                    href="/contact"
+                href="/contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-full shadow-lg shadow-orange-500/30 transition-colors"
@@ -118,7 +118,7 @@ export default function AboutHero() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-500">Call Us Today</p>
-                  <p className="text-sm font-bold">+91 78455-56827</p>
+                  <p className="text-sm font-bold">+91 73037-29955</p>
                 </div>
               </a>
             </div>
